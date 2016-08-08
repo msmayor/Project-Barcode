@@ -1,0 +1,1765 @@
+2016-08-07 13:35:09 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\SignupForm::MiddleName' 
+
+in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2068): yii\base\Component->__get('MiddleName')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'MiddleName')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\SignupForm), 'MiddleName', Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\SignupForm), 'MiddleName', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(190): yii\widgets\ActiveField->textInput()
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(162): yii\bootstrap\ActiveField->render()
+#7 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#12 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('signup', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(164): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#8 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: frontend\controllers\SiteController->actionSignup()
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+    in C:\xampp\htdocs\advanced\frontend\views\site\signup.php:28
+    in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:162
+2016-08-07 13:35:08 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25410'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470569708.686
+    'REQUEST_TIME' => 1470569708
+]
+2016-08-07 13:39:50 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\SignupForm::MiddleName' 
+
+in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2068): yii\base\Component->__get('MiddleName')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'MiddleName')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\SignupForm), 'MiddleName', Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\SignupForm), 'MiddleName', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(190): yii\widgets\ActiveField->textInput()
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(162): yii\bootstrap\ActiveField->render()
+#7 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#12 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('signup', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(164): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#8 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: frontend\controllers\SiteController->actionSignup()
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+    in C:\xampp\htdocs\advanced\frontend\views\site\signup.php:28
+    in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:162
+2016-08-07 13:39:49 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25515'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470569989.918
+    'REQUEST_TIME' => 1470569989
+]
+2016-08-07 13:39:51 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\SignupForm::MiddleName' 
+
+in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2068): yii\base\Component->__get('MiddleName')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'MiddleName')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\SignupForm), 'MiddleName', Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\SignupForm), 'MiddleName', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(190): yii\widgets\ActiveField->textInput()
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(162): yii\bootstrap\ActiveField->render()
+#7 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#12 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('signup', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(164): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#8 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: frontend\controllers\SiteController->actionSignup()
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+    in C:\xampp\htdocs\advanced\frontend\views\site\signup.php:28
+    in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:162
+2016-08-07 13:39:51 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25529'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470569991.132
+    'REQUEST_TIME' => 1470569991
+]
+2016-08-07 13:39:52 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\SignupForm::MiddleName' 
+
+in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2068): yii\base\Component->__get('MiddleName')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'MiddleName')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\SignupForm), 'MiddleName', Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\SignupForm), 'MiddleName', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(190): yii\widgets\ActiveField->textInput()
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(162): yii\bootstrap\ActiveField->render()
+#7 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#12 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('signup', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(164): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#8 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: frontend\controllers\SiteController->actionSignup()
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+    in C:\xampp\htdocs\advanced\frontend\views\site\signup.php:28
+    in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:162
+2016-08-07 13:39:52 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25530'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470569992.316
+    'REQUEST_TIME' => 1470569992
+]
+2016-08-07 13:39:55 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\SignupForm::MiddleName' 
+
+in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2068): yii\base\Component->__get('MiddleName')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'MiddleName')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\SignupForm), 'MiddleName', Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\SignupForm), 'MiddleName', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(190): yii\widgets\ActiveField->textInput()
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(162): yii\bootstrap\ActiveField->render()
+#7 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#12 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('signup', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(164): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#8 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: frontend\controllers\SiteController->actionSignup()
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+    in C:\xampp\htdocs\advanced\frontend\views\site\signup.php:28
+    in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:162
+2016-08-07 13:39:55 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25531'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470569995.228
+    'REQUEST_TIME' => 1470569995
+]
+2016-08-07 13:40:22 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\SignupForm::MiddleName' 
+
+in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2068): yii\base\Component->__get('MiddleName')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'MiddleName')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\SignupForm), 'MiddleName', Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\SignupForm), 'MiddleName', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(190): yii\widgets\ActiveField->textInput()
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(162): yii\bootstrap\ActiveField->render()
+#7 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#12 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('signup', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(164): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(28): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#8 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: frontend\controllers\SiteController->actionSignup()
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+    in C:\xampp\htdocs\advanced\frontend\views\site\signup.php:28
+    in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:162
+2016-08-07 13:40:22 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25549'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470570022.823
+    'REQUEST_TIME' => 1470570022
+]
+2016-08-07 13:42:46 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\SignupForm::Address' 
+
+in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2068): yii\base\Component->__get('Address')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'Address')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\SignupForm), 'Address', Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\SignupForm), 'Address', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(190): yii\widgets\ActiveField->textInput()
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(162): yii\bootstrap\ActiveField->render()
+#7 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(34): yii\widgets\ActiveField->__toString()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#12 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('signup', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(164): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\advanced\frontend\views\site\signup.php(34): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#8 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(162): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: frontend\controllers\SiteController->actionSignup()
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+    in C:\xampp\htdocs\advanced\frontend\views\site\signup.php:34
+    in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:162
+2016-08-07 13:42:46 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25558'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470570166.807
+    'REQUEST_TIME' => 1470570166
+]
+2016-08-07 13:55:39 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\User::firstName' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(272): yii\base\Component->__set('firstName', 'Adrian')
+#1 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(63): yii\db\BaseActiveRecord->__set('firstName', 'Adrian')
+#2 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#3 [internal function]: frontend\controllers\SiteController->actionSignup()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-08-07 13:55:38 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'Yk1lbE5VdWMFFVQKHSJGCwgIViQIJzwECxkhBBQQGTs1BQQDODAhGQ=='
+    'SignupForm' => [
+        'Employee_ID' => '2014-100697'
+        'firstName' => 'Adrian'
+        'lastName' => 'Tobias'
+        'MiddleName' => ''
+        'Age' => ''
+        'Birth' => ''
+        'Address' => ''
+        'YearsInCompany' => ''
+        'Department' => ''
+        'username' => 'adtobias'
+        'email' => 'adriantobias94@yahoo.com'
+        'password' => 'pspiso'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '458'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25839'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470570938.925
+    'REQUEST_TIME' => 1470570938
+]
+2016-08-07 13:59:39 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\User::firstName' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(272): yii\base\Component->__set('firstName', 'Adrian')
+#1 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(64): yii\db\BaseActiveRecord->__set('firstName', 'Adrian')
+#2 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#3 [internal function]: frontend\controllers\SiteController->actionSignup()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-08-07 13:59:39 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'cUdFZjQ3RzUWH3QAZ0B0XRsCdi5yRQ5SGBMBDm5yK20mDyQJQlITTw=='
+    'SignupForm' => [
+        'Employee_ID' => '2014-100697'
+        'firstName' => 'Adrian'
+        'lastName' => 'Tobias'
+        'MiddleName' => 'De Vera'
+        'Age' => '18'
+        'Birth' => '01-07-1997'
+        'Address' => 'anfgakdlan'
+        'YearsInCompany' => '18'
+        'Department' => 'jlnaslnfafja'
+        'username' => 'adtobias'
+        'email' => 'adriantobias94@yahoo.com'
+        'password' => 'pspiso'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '501'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25858'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470571179.49
+    'REQUEST_TIME' => 1470571179
+]
+2016-08-07 14:09:04 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\User::Employee_ID' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(272): yii\base\Component->__set('Employee_ID', '2014-100697')
+#1 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(72): yii\db\BaseActiveRecord->__set('Employee_ID', '2014-100697')
+#2 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#3 [internal function]: frontend\controllers\SiteController->actionSignup()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/signup', Array)
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-08-07 14:09:04 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'a3Zad0NwX1QMLmsREAdsPAEzaT8FAhYzAiIeHxk1Mww8PjsYNRULLg=='
+    'SignupForm' => [
+        'Employee_ID' => '2014-100697'
+        'firstName' => 'Adrian'
+        'lastName' => 'Tobias'
+        'MiddleName' => 'De Vera'
+        'Age' => '18'
+        'Birth' => '01-07-1997'
+        'Address' => '4624 Iris St Sunvalley Subdivision Paranaque City'
+        'YearsInCompany' => '18'
+        'Department' => 'Operations'
+        'username' => 'cooladrian'
+        'email' => 'adriantobias94@gmail.com'
+        'password' => 'pspiso'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '540'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25939'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470571744.259
+    'REQUEST_TIME' => 1470571744
+]
+2016-08-07 14:12:10 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Age' cannot be null' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(78): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Age' cannot be null
+The SQL being executed was: INSERT INTO `user` (`firstName`, `lastName`, `MiddleName`, `Age`, `Birth`, `Address`, `YearsInCompany`, `Department`, `Employee_ID`, `username`, `email`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('Adrian', 'Tobias', 'De Vera', NULL, NULL, NULL, NULL, NULL, '2014-100697', 'cooladrian', 'adriantobias94@gmail.com', '$2y$13$xaEpaIuQllVPhDiF4MJTiu7x7NbagFbcMPLc8LL6JlAhODNOXY4zi', 'd1GNOdMgpv_TZHQZYYkdaVn5g0st0cY-', 10, 1470571930, 1470571930)' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(78): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Age' cannot be null
+)
+
+2016-08-07 14:12:09 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'a3Zad0NwX1QMLmsREAdsPAEzaT8FAhYzAiIeHxk1Mww8PjsYNRULLg=='
+    'SignupForm' => [
+        'Employee_ID' => '2014-100697'
+        'firstName' => 'Adrian'
+        'lastName' => 'Tobias'
+        'MiddleName' => 'De Vera'
+        'Age' => '18'
+        'Birth' => '01-07-1997'
+        'Address' => '4624 Iris St Sunvalley Subdivision Paranaque City'
+        'YearsInCompany' => '18'
+        'Department' => 'Operations'
+        'username' => 'cooladrian'
+        'email' => 'adriantobias94@gmail.com'
+        'password' => 'pspiso'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '540'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25970'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470571929.526
+    'REQUEST_TIME' => 1470571929
+]
+2016-08-07 14:12:28 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Age' cannot be null' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(78): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Age' cannot be null
+The SQL being executed was: INSERT INTO `user` (`firstName`, `lastName`, `MiddleName`, `Age`, `Birth`, `Address`, `YearsInCompany`, `Department`, `Employee_ID`, `username`, `email`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('Adrian', 'Tobias', 'De Vera', NULL, NULL, NULL, NULL, NULL, '2014-100697', 'cooladrian', 'adriantobias94@gmail.com', '$2y$13$FLZDeirRaH5NxtVuWoDROuMhj3JErNt9./sp46ejPJ7pcc9KREGpK', 'lYGs72-X-zfz8TSyIDRUotv3cG46cL7I', 10, 1470571948, 1470571948)' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(78): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Age' cannot be null
+)
+
+2016-08-07 14:12:27 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'dFkudnBSRksTAR8QIyV1Ix4cHT42IA8sHQ1qHioXKhMjEU8ZBjcSMQ=='
+    'SignupForm' => [
+        'Employee_ID' => '2014-100697'
+        'firstName' => 'Adrian'
+        'lastName' => 'Tobias'
+        'MiddleName' => 'De Vera'
+        'Age' => '18'
+        'Birth' => '01-07-1997'
+        'Address' => '4624 Iris St Sunvalley Subdivision Paranaque City'
+        'YearsInCompany' => '18'
+        'Department' => 'Operations'
+        'username' => 'cooladrian'
+        'email' => 'adriantobias94@gmail.com'
+        'password' => 'pspiso'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '540'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25978'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470571947.949
+    'REQUEST_TIME' => 1470571947
+]
+2016-08-07 14:13:54 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Age' cannot be null' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(78): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Age' cannot be null
+The SQL being executed was: INSERT INTO `user` (`firstName`, `lastName`, `MiddleName`, `Age`, `Birth`, `Address`, `YearsInCompany`, `Department`, `Employee_ID`, `username`, `email`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('Adrian', 'Tobias', 'De Vera', NULL, NULL, NULL, NULL, NULL, '2014-100697', 'cooladrian', 'adriantobias94@gmail.com', '$2y$13$EunMOuc8BMcebRiyAvbYceRB8e5lJhaOKAi4WZe44Vr6KSPWbSetK', 'K8eQO7ArGEoa64vuTCCT31Ga6LTQ1lsJ', 10, 1470572034, 1470572034)' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(78): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Age' cannot be null
+)
+
+2016-08-07 14:13:53 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'Mi4tLlhSRkxVdhxICyV1JFhrHmYeIA8rW3ppRgIXKhRlZkxBLjcSNg=='
+    'SignupForm' => [
+        'Employee_ID' => '2014-100697'
+        'firstName' => 'Adrian'
+        'lastName' => 'Tobias'
+        'MiddleName' => 'De Vera'
+        'Age' => '29'
+        'Birth' => '01-07-1997'
+        'Address' => '4624 Iris St Sunvalley Subdivision Paranaque City'
+        'YearsInCompany' => '18'
+        'Department' => 'Operations'
+        'username' => 'cooladrian'
+        'email' => 'adriantobias94@gmail.com'
+        'password' => 'pspiso'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '540'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '25983'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470572033.7
+    'REQUEST_TIME' => 1470572033
+]
+2016-08-07 14:14:34 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Birth' cannot be null' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(78): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Birth' cannot be null
+The SQL being executed was: INSERT INTO `user` (`firstName`, `lastName`, `MiddleName`, `Age`, `Birth`, `Address`, `YearsInCompany`, `Department`, `Employee_ID`, `username`, `email`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('Adrian', 'Tobias', 'De Vera', NULL, NULL, NULL, NULL, NULL, '2014-100697', 'cooladrian', 'adriantobias94@gmail.com', '$2y$13$W4IfVU9hA9fypJpjAZptyu0Eksg/i6J2u8e89lO0.NmWjOvxP927m', '_Pa-hV-sVAjefVYEPFOLt2HaiprpqQzv', 10, 1470572074, 1470572074)' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(78): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Birth' cannot be null
+)
+
+2016-08-07 14:14:33 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'Mi4tLlhSRkxVdhxICyV1JFhrHmYeIA8rW3ppRgIXKhRlZkxBLjcSNg=='
+    'SignupForm' => [
+        'Employee_ID' => '2014-100697'
+        'firstName' => 'Adrian'
+        'lastName' => 'Tobias'
+        'MiddleName' => 'De Vera'
+        'Age' => '29'
+        'Birth' => '01-07-1997'
+        'Address' => '4624 Iris St Sunvalley Subdivision Paranaque City'
+        'YearsInCompany' => '18'
+        'Department' => 'Operations'
+        'username' => 'cooladrian'
+        'email' => 'adriantobias94@gmail.com'
+        'password' => 'pspiso'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '540'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '26003'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470572073.9
+    'REQUEST_TIME' => 1470572073
+]
+2016-08-07 14:15:25 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Birth' cannot be null' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(78): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Birth' cannot be null
+The SQL being executed was: INSERT INTO `user` (`firstName`, `lastName`, `MiddleName`, `Age`, `Birth`, `Address`, `YearsInCompany`, `Department`, `Employee_ID`, `username`, `email`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('Adrian', 'Tobias', 'De Vera', NULL, NULL, NULL, NULL, NULL, '2014-100697', 'adtobias', 'adriantobias94@yahoo.com', '$2y$13$g6eFAkbfE6iBThpNt1U4qOqb5ZHEvAd3CwnAYYnmnGql0V/Yzc.Ru', 'SL0ud8lnmXWQwpYkN9p7dy6i0wv2tVWh', 10, 1470572125, 1470572125)' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(78): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Birth' cannot be null
+)
+
+2016-08-07 14:15:24 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'cUdFZjQ3RzUWH3QAZ0B0XRsCdi5yRQ5SGBMBDm5yK20mDyQJQlITTw=='
+    'SignupForm' => [
+        'Employee_ID' => '2014-100697'
+        'firstName' => 'Adrian'
+        'lastName' => 'Tobias'
+        'MiddleName' => 'De Vera'
+        'Age' => '18'
+        'Birth' => '01-07-1997'
+        'Address' => 'anfgakdlan'
+        'YearsInCompany' => '18'
+        'Department' => 'jlnaslnfafja'
+        'username' => 'adtobias'
+        'email' => 'adriantobias94@yahoo.com'
+        'password' => 'pspiso'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '501'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '26007'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470572124.295
+    'REQUEST_TIME' => 1470572124
+]
+2016-08-07 14:18:20 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Address' cannot be null' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(82): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Address' cannot be null
+The SQL being executed was: INSERT INTO `user` (`firstName`, `lastName`, `MiddleName`, `Age`, `Birth`, `Address`, `YearsInCompany`, `Department`, `Employee_ID`, `username`, `email`, `password_hash`, `auth_key`, `status`, `created_at`, `updated_at`) VALUES ('Adrian', 'Tobias', 'De Vera', 29, '01-07-1997', NULL, 18, 'Operations', '2014-100697', 'cooladrian', 'adriantobias94@gmail.com', '$2y$13$4kgUaf39Afo5yWR/KGKmnO0RF1LpMtqU1TmhcC.qXufH08ot4QVZa', 'c_7ob0jwXoN_ps7fWmSzJ-p2ZerVLI-y', 10, 1470572300, 1470572300)' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(82): yii\db\BaseActiveRecord->save()
+#6 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignup()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'Address' cannot be null
+)
+
+2016-08-07 14:18:19 [::1][-][4b7eqv4jelr6fhp6a2khvhesp5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'Mi4tLlhSRkxVdhxICyV1JFhrHmYeIA8rW3ppRgIXKhRlZkxBLjcSNg=='
+    'SignupForm' => [
+        'Employee_ID' => '2014-100697'
+        'firstName' => 'Adrian'
+        'lastName' => 'Tobias'
+        'MiddleName' => 'De Vera'
+        'Age' => '29'
+        'Birth' => '01-07-1997'
+        'Address' => '4624 Iris St Sunvalley Subdivision Paranaque City'
+        'YearsInCompany' => '18'
+        'Department' => 'Operations'
+        'username' => 'cooladrian'
+        'email' => 'adriantobias94@gmail.com'
+        'password' => 'pspiso'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '4b7eqv4jelr6fhp6a2khvhesp5'
+    '_csrf' => 'd237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '540'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=4b7eqv4jelr6fhp6a2khvhesp5; _csrf=d237136b9b3204e01c2e930fe3ce439e74df53b8d6a562436f63deb86d4df7e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gX1fSw3hjE3HFrIgiTDhZElXWHaoveTz%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '26042'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1470572299.633
+    'REQUEST_TIME' => 1470572299
+]
