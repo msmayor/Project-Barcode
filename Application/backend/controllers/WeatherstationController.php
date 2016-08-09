@@ -3,8 +3,8 @@
 namespace backend\controllers;
 
 use Yii;
-use backend\models\Weatherstation;
-use backend\models\WeatherstationSearch;
+use common\models\Weatherstation;
+use common\models\WeatherstationSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

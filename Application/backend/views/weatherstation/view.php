@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\Weatherstation */
+/* @var $model common\models\Weatherstation */
 
 $this->title = $model->WeatherStation_ID;
 $this->params['breadcrumbs'][] = ['label' => 'Weatherstations', 'url' => ['index']];

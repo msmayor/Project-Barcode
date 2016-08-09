@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel backend\models\ServicereportSearch */
+/* @var $searchModel common\models\ServicereportSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Servicereports';
@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-         
+
             'ID',
             'DateStarted',
             'DateEnd',

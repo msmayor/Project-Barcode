@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\Servicereport */
+/* @var $model common\models\Servicereport */
 
 $this->title = 'Create Servicereport';
 $this->params['breadcrumbs'][] = ['label' => 'Servicereports', 'url' => ['index']];
