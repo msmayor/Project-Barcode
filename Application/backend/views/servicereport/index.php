@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-
+use dosamigos\datepicker\DatePicker;
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\ServicereportSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -25,8 +25,32 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'ID',
-            'DateStarted',
-            'DateEnd',
+            [
+                'attribute'=>'DateStarted',
+                'value'=>'DateStarted',
+                'format'=>'raw',
+                'filter'=>DatePicker::widget([
+                        'model' => $searchModel,
+                        'attribute' => 'DateStarted',
+                            'clientOptions' => [
+                                'autoclose' => true,
+                                'format' => 'yyyy-m-d'
+                            ]
+                    ])
+            ],
+            [
+                'attribute'=>'DateEnd',
+                'value'=>'DateEnd',
+                'format'=>'raw',
+                'filter'=>DatePicker::widget([
+                        'model' => $searchModel,
+                        'attribute' => 'DateEnd',
+                            'clientOptions' => [
+                                'autoclose' => true,
+                                'format' => 'yyyy-m-d'
+                            ]
+                    ])
+            ],
             'Author',
             'Manager',
             // 'AssetID',

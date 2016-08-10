@@ -13,7 +13,7 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'DateStarted')->textInput() ?>
-
+    
     <?= $form->field($model, 'DateEnd')->textInput() ?>
 
     <?= $form->field($model, 'Author')->textInput(['maxlength' => true]) ?>
