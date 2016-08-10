@@ -8,7 +8,7 @@ use yii\data\ActiveDataProvider;
 use common\models\Weatherstation;
 
 /**
- * WeatherstationSearch represents the model behind the search form about `common\models\Weatherstation`.
+ * WeatherstationSearch represents the model behind the search form of `common\models\Weatherstation`.
  */
 class WeatherstationSearch extends Weatherstation
 {
@@ -18,7 +18,7 @@ class WeatherstationSearch extends Weatherstation
     public function rules()
     {
         return [
-            [['WeatherStation_ID'], 'integer'],
+            [['id'], 'integer'],
             [['WeatherStation_Model', 'WeatherStation_Name', 'WeatherStation_Location', 'WeatherStation_Status', 'WeatherStation_Gateway', 'WeatherStation_Logger', 'WeatherStation_Number'], 'safe'],
         ];
     }
@@ -59,7 +59,7 @@ class WeatherstationSearch extends Weatherstation
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'WeatherStation_ID' => $this->WeatherStation_ID,
+            'id' => $this->id,
         ]);
 
         $query->andFilterWhere(['like', 'WeatherStation_Model', $this->WeatherStation_Model])

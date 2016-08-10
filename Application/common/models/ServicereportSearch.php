@@ -8,7 +8,7 @@ use yii\data\ActiveDataProvider;
 use common\models\Servicereport;
 
 /**
- * ServicereportSearch represents the model behind the search form about `common\models\Servicereport`.
+ * ServicereportSearch represents the model behind the search form of `common\models\Servicereport`.
  */
 class ServicereportSearch extends Servicereport
 {
@@ -18,7 +18,7 @@ class ServicereportSearch extends Servicereport
     public function rules()
     {
         return [
-            [['ID', 'WeatherStation_WeatherStation_ID', 'user_ID'], 'integer'],
+            [['id', 'WeatherStation_WeatherStation_ID', 'user_ID'], 'integer'],
             [['DateStarted', 'DateEnd', 'Author', 'Manager', 'AssetID'], 'safe'],
         ];
     }
@@ -59,7 +59,7 @@ class ServicereportSearch extends Servicereport
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'ID' => $this->ID,
+            'id' => $this->id,
             'DateStarted' => $this->DateStarted,
             'DateEnd' => $this->DateEnd,
             'WeatherStation_WeatherStation_ID' => $this->WeatherStation_WeatherStation_ID,

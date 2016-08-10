@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 07, 2016 at 05:20 PM
+-- Generation Time: Aug 10, 2016 at 02:57 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.21
 
@@ -19,6 +19,39 @@ SET time_zone = "+00:00";
 --
 -- Database: `weatherph`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `firstName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `lastName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `MiddleName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `Age` int(2) DEFAULT NULL,
+  `Birth` date NOT NULL,
+  `Address` varchar(300) COLLATE utf8_unicode_ci NOT NULL,
+  `YearsInCompany` int(2) NOT NULL,
+  `Department` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `auth_key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `password_hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password_reset_token` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `status` smallint(6) NOT NULL DEFAULT '10',
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `firstName`, `lastName`, `MiddleName`, `Age`, `Birth`, `Address`, `YearsInCompany`, `Department`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES
+(2, 'Adrian', 'Tobias', 'De Vera', 29, '0000-00-00', '4624 Iris St Sunvalley Subdivision Paranaque City', 18, 'Operations', 'admin', '_XHhRpAG3H_csEkc6pYpmABKbrs9EJDg', '$2y$13$Dk9QqV1XUMXsPuG/VvfqOu1Pe8rnV5Mhw3b7qoSBKuvukD.hF9.Ti', NULL, 'adriantobias94@gmail.com', 10, 1470572341, 1470572341);
 
 -- --------------------------------------------------------
 
@@ -87,7 +120,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `firstName`, `lastName`, `MiddleName`, `Age`, `Birth`, `Address`, `YearsInCompany`, `Department`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES
-(2, 'Adrian', 'Tobias', 'De Vera', 29, '0000-00-00', '4624 Iris St Sunvalley Subdivision Paranaque City', 18, 'Operations', 'cooladrian', '_XHhRpAG3H_csEkc6pYpmABKbrs9EJDg', '$2y$13$Dk9QqV1XUMXsPuG/VvfqOu1Pe8rnV5Mhw3b7qoSBKuvukD.hF9.Ti', NULL, 'adriantobias94@gmail.com', 10, 1470572341, 1470572341);
+(2, 'Adrian', 'Tobias', 'De Vera', 29, '0000-00-00', '4624 Iris St Sunvalley Subdivision Paranaque City', 18, 'Operations', 'cooladrian', '_XHhRpAG3H_csEkc6pYpmABKbrs9EJDg', '$2y$13$Dk9QqV1XUMXsPuG/VvfqOu1Pe8rnV5Mhw3b7qoSBKuvukD.hF9.Ti', NULL, 'adriantobias94@gmail.com', 10, 1470572341, 1470572341),
+(3, 'Joanna', 'De Guzman', 'De Castro', 18, '0000-00-00', 'ajksbgkab', 18, 'aahsoigfhanoi', 'cooljoanna', '8EvGhB0KoV5uzYWV_Q-D-gVypbMINCjb', '$2y$13$ZfC14IudkeGluhPJ2/ZFFOMkhTlLpsVfs0CkBHlfvIeX1eM/w4vei', NULL, 'joanna29@yahoo.com', 10, 1470819117, 1470819117);
 
 -- --------------------------------------------------------
 
@@ -116,6 +150,15 @@ INSERT INTO `weatherstation` (`WeatherStation_ID`, `WeatherStation_Model`, `Weat
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`),
+  ADD UNIQUE KEY `email` (`email`),
+  ADD UNIQUE KEY `password_reset_token` (`password_reset_token`);
 
 --
 -- Indexes for table `migration`
@@ -151,6 +194,11 @@ ALTER TABLE `weatherstation`
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
 -- AUTO_INCREMENT for table `servicereport`
 --
 ALTER TABLE `servicereport`
@@ -159,7 +207,7 @@ ALTER TABLE `servicereport`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `weatherstation`
 --

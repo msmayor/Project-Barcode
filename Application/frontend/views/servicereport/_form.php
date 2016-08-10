@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use dosamigos\datepicker\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Servicereport */
@@ -12,9 +13,33 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'DateStarted')->textInput() ?>
+    <?= $form->field($model, 'DateStarted')->widget(
+                            DatePicker::className(), [
+                                // inline too, not bad
+                                 'inline' => true, 
+                                 // modify template for custom rendering
+                                'template' => '<div class="well well-sm" style="background-color: #fff; width:250px">{input}</div>',
+                                'clientOptions' => [
+                                    'autoclose' => true,
+                                    'format' => 'yyyy-mm-dd',
+                                    ]
+                        ]);
 
-    <?= $form->field($model, 'DateEnd')->textInput() ?>
+                 ?>
+
+    <?= $form->field($model, 'DateEnd')->widget(
+                            DatePicker::className(), [
+                                // inline too, not bad
+                                 'inline' => true, 
+                                 // modify template for custom rendering
+                                'template' => '<div class="well well-sm" style="background-color: #fff; width:250px">{input}</div>',
+                                'clientOptions' => [
+                                    'autoclose' => true,
+                                    'format' => 'yyyy-mm-dd',
+                                    ]
+                        ]);
+
+                 ?>
 
     <?= $form->field($model, 'Author')->textInput(['maxlength' => true]) ?>
 
