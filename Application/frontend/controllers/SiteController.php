@@ -185,7 +185,7 @@ class SiteController extends Controller
         ]);
     }
 
-    /**
+        /**
      * Resets password.
      *
      * @param string $token
@@ -210,4 +210,5 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+    
 }

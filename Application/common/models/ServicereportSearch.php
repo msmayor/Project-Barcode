@@ -18,8 +18,8 @@ class ServicereportSearch extends Servicereport
     public function rules()
     {
         return [
-            [['id', 'WeatherStation_WeatherStation_ID', 'user_ID'], 'integer'],
-            [['DateStarted', 'DateEnd', 'Author', 'Manager', 'AssetID'], 'safe'],
+            [['id', 'user_id'], 'integer'],
+            [['DateStarted', 'DateEnd', 'Author', 'Manager', 'WeatherStation_id'], 'safe'],
         ];
     }
 
@@ -57,18 +57,20 @@ class ServicereportSearch extends Servicereport
             return $dataProvider;
         }
 
+        $query->joinWith('weatherStation');
+
+
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
             'DateStarted' => $this->DateStarted,
             'DateEnd' => $this->DateEnd,
-            'WeatherStation_WeatherStation_ID' => $this->WeatherStation_WeatherStation_ID,
-            'user_ID' => $this->user_ID,
+            'user_id' => $this->user_id,
         ]);
 
         $query->andFilterWhere(['like', 'Author', $this->Author])
             ->andFilterWhere(['like', 'Manager', $this->Manager])
-            ->andFilterWhere(['like', 'AssetID', $this->AssetID]);
+            ->andFilterWhere(['like', 'WeatherStation.WeatherStation_Location', $this->WeatherStation_id]);
 
         return $dataProvider;
     }

@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use dosamigos\datepicker\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $searchModel common\models\ServicereportSearch */
@@ -26,37 +25,12 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            [
-                'attribute'=>'DateStarted',
-                'value'=>'DateStarted',
-                'format'=>'raw',
-                'filter'=>DatePicker::widget([
-                        'model' => $searchModel,
-                        'attribute' => 'DateStarted',
-                            'clientOptions' => [
-                                'autoclose' => true,
-                                'format' => 'yyyy-m-d'
-                            ]
-                    ])
-            ],
-            [
-                'attribute'=>'DateEnd',
-                'value'=>'DateEnd',
-                'format'=>'raw',
-                'filter'=>DatePicker::widget([
-                        'model' => $searchModel,
-                        'attribute' => 'DateEnd',
-                            'clientOptions' => [
-                                'autoclose' => true,
-                                'format' => 'yyyy-m-d'
-                            ]
-                    ])
-            ],
+            'DateStarted',
+            'DateEnd',
             'Author',
             'Manager',
-            // 'AssetID',
-            // 'WeatherStation_WeatherStation_ID',
-            // 'user_ID',
+            // 'WeatherStation_id',
+            // 'user_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

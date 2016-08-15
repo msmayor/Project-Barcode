@@ -33,9 +33,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'DateEnd',
             'Author',
             'Manager',
-            'AssetID',
-            'WeatherStation_WeatherStation_ID',
-            'user_ID',
+            'WeatherStation_id',
+            'user_id',
         ],
     ]) ?>
 

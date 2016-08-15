@@ -25,11 +25,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Manager') ?>
 
-    <?php // echo $form->field($model, 'AssetID') ?>
+    <?php // echo $form->field($model, 'WeatherStation_id') ?>
 
-    <?php // echo $form->field($model, 'WeatherStation_WeatherStation_ID') ?>
-
-    <?php // echo $form->field($model, 'user_ID') ?>
+    <?php // echo $form->field($model, 'user_id') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

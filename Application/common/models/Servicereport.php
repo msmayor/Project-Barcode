@@ -7,16 +7,15 @@ use Yii;
 /**
  * This is the model class for table "servicereport".
  *
- * @property integer $ID
+ * @property integer $id
  * @property string $DateStarted
  * @property string $DateEnd
  * @property string $Author
  * @property string $Manager
- * @property string $AssetID
- * @property integer $WeatherStation_WeatherStation_ID
- * @property integer $user_ID
+ * @property integer $WeatherStation_id
+ * @property integer $user_id
  *
- * @property Weatherstation $weatherStationWeatherStation
+ * @property Weatherstation $weatherStation
  * @property User $user
  */
 class Servicereport extends \yii\db\ActiveRecord
@@ -35,12 +34,12 @@ class Servicereport extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['DateStarted', 'DateEnd', 'Author', 'Manager', 'AssetID', 'WeatherStation_WeatherStation_ID', 'user_ID'], 'required'],
+            [['DateStarted', 'DateEnd', 'Author', 'Manager', 'WeatherStation_id', 'user_id'], 'required'],
             [['DateStarted', 'DateEnd'], 'safe'],
-            [['WeatherStation_WeatherStation_ID', 'user_ID'], 'integer'],
-            [['Author', 'Manager', 'AssetID'], 'string', 'max' => 200],
-            [['WeatherStation_WeatherStation_ID'], 'exist', 'skipOnError' => true, 'targetClass' => Weatherstation::className(), 'targetAttribute' => ['WeatherStation_WeatherStation_ID' => 'WeatherStation_ID']],
-            [['user_ID'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_ID' => 'id']],
+            [['user_id'], 'integer'],
+            [['Author', 'Manager'], 'string', 'max' => 200],
+            [['WeatherStation_id'], 'exist', 'skipOnError' => true, 'targetClass' => Weatherstation::className(), 'targetAttribute' => ['WeatherStation_id' => 'id']],
+            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
 
@@ -50,23 +49,22 @@ class Servicereport extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'ID' => 'ID',
+            'id' => 'ID',
             'DateStarted' => 'Date Started',
             'DateEnd' => 'Date End',
             'Author' => 'Author',
             'Manager' => 'Manager',
-            'AssetID' => 'Asset ID',
-            'WeatherStation_WeatherStation_ID' => 'Weather Station  Weather Station  ID',
-            'user_ID' => 'User  ID',
+            'WeatherStation_id' => 'Weather Station Location',
+            'user_id' => 'Employee Email',
         ];
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getWeatherStationWeatherStation()
+    public function getWeatherStation()
     {
-        return $this->hasOne(Weatherstation::className(), ['WeatherStation_ID' => 'WeatherStation_WeatherStation_ID']);
+        return $this->hasOne(Weatherstation::className(), ['id' => 'WeatherStation_id']);
     }
 
     /**

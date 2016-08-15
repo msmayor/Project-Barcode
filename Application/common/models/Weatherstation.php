@@ -7,7 +7,7 @@ use Yii;
 /**
  * This is the model class for table "weatherstation".
  *
- * @property integer $WeatherStation_ID
+ * @property integer $id
  * @property string $WeatherStation_Model
  * @property string $WeatherStation_Name
  * @property string $WeatherStation_Location
@@ -49,7 +49,7 @@ class Weatherstation extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'WeatherStation_ID' => 'Weather Station  ID',
+            'id' => 'ID',
             'WeatherStation_Model' => 'Weather Station  Model',
             'WeatherStation_Name' => 'Weather Station  Name',
             'WeatherStation_Location' => 'Weather Station  Location',
@@ -65,6 +65,6 @@ class Weatherstation extends \yii\db\ActiveRecord
      */
     public function getServicereports()
     {
-        return $this->hasMany(Servicereport::className(), ['WeatherStation_WeatherStation_ID' => 'WeatherStation_ID']);
+        return $this->hasMany(Servicereport::className(), ['WeatherStation_id' => 'id']);
     }
 }

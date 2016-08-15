@@ -21,15 +21,15 @@ class WeatherstationController extends Controller
     {
         return [
             'access'=>[
-                'class'=>AccessControl::classname(),
-                'only'=>['create','update'],
-                'rules'=>[
-                    [
-                        'allow'=>true,
-                        'roles'=>['@']
+                        'class'=>AccessControl::classname(),
+                        'only'=>['create','update'],
+                        'rules'=>[
+                            [
+                                'allow'=>true,
+                                'roles'=>['@']
+                            ],
+                        ]
                     ],
-                ]
-            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

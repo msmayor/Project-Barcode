@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+
 /**
  * ServicereportController implements the CRUD actions for Servicereport model.
  */
@@ -21,16 +22,15 @@ class ServicereportController extends Controller
     {
         return [
             'access'=>[
-                'class'=>AccessControl::classname(),
-                'only'=>['create','update'],
-                'rules'=>[
-                    [
-                        'allow'=>true,
-                        'roles'=>['@']
-                    ],
-                ]
-            ],
-
+                    'class'=>AccessControl::classname(),
+                    'only'=>['create','update'],
+                    'rules'=>[
+                        [
+                            'allow'=>true,
+                            'roles'=>['@']
+                        ],
+                    ]
+                ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
