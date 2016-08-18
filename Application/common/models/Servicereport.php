@@ -23,6 +23,8 @@ class Servicereport extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+
+    public $file;
     public static function tableName()
     {
         return 'servicereport';
@@ -37,7 +39,8 @@ class Servicereport extends \yii\db\ActiveRecord
             [['DateStarted', 'DateEnd', 'Author', 'Manager', 'WeatherStation_id', 'user_id'], 'required'],
             [['DateStarted', 'DateEnd'], 'safe'],
             [['user_id'], 'integer'],
-            [['Author', 'Manager'], 'string', 'max' => 200],
+            [['file'],'file'],
+            [['Author','Document', 'Manager'], 'string', 'max' => 200],
             [['WeatherStation_id'], 'exist', 'skipOnError' => true, 'targetClass' => Weatherstation::className(), 'targetAttribute' => ['WeatherStation_id' => 'id']],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
@@ -56,6 +59,7 @@ class Servicereport extends \yii\db\ActiveRecord
             'Manager' => 'Manager',
             'WeatherStation_id' => 'Weather Station Location',
             'user_id' => 'Employee Email',
+            'Document' => 'Document',
         ];
     }
 

@@ -14,7 +14,7 @@ use kartik\select2\Select2;
 
 <div class="servicereport-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
  
          <?= $form->field($model, 'WeatherStation_id')->widget(Select2::classname(), [
@@ -58,6 +58,8 @@ use kartik\select2\Select2;
     <?= $form->field($model, 'Author')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'Manager')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'Document' )->fileInput(); ?>
 
     <?= $form->field($model, 'user_id')->widget(Select2::classname(), [
             'data' => ArrayHelper::map(user::find()->all(),'id','email'),

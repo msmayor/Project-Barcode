@@ -9,7 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-
+use yii\web\UploadedFile;
 /**
  * ServicereportController implements the CRUD actions for Servicereport model.
  */
@@ -76,7 +76,16 @@ class ServicereportController extends Controller
     {
         $model = new Servicereport();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        
+        if ($model->load(Yii::$app->request->post())) {
+
+
+            $documentName = $model->id;
+            $model->file = UploadedFile::getInstance($model,'file');
+            $model->file->saveAs( 'uploads/'.$documentName.'.'.$model->file->extension );
+            $model->Document = 'uploads/'.$documentName.'.'.$model->file->extension;
+
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [

@@ -26074,3 +26074,730 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1471498904.368
     'REQUEST_TIME' => 1471498904
 ]
+2016-08-18 07:48:04 [::1][-][-][error][Error] Error: Undefined class constant 'begin' in C:\xampp\htdocs\advance\backend\views\servicereport\index.php:22
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require()
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\ServicereportController))
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\ServicereportController))
+#4 C:\xampp\htdocs\advance\backend\controllers\ServicereportController.php(54): yii\base\Controller->render('index', Array)
+#5 [internal function]: backend\controllers\ServicereportController->actionIndex()
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/i...', Array)
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\advance\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2016-08-18 07:48:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'servicereport/index'
+]
+
+$_COOKIE = [
+    'PHPBACKSESSID' => 'hdnqsuqcmfl3n2rt0bkbjldj76'
+    '_backendCSRF' => '98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"-WOkscCjwJY4O4lTpfyYjI31avyJUiBA\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPBACKSESSID=hdnqsuqcmfl3n2rt0bkbjldj76; _backendCSRF=98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22-WOkscCjwJY4O4lTpfyYjI31avyJUiBA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Ruby22\\bin;C:\\Users\\student\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/backend/web/index.php'
+    'REMOTE_PORT' => '8220'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Findex'
+    'REQUEST_URI' => '/advance/backend/web/index.php?r=servicereport%2Findex'
+    'SCRIPT_NAME' => '/advance/backend/web/index.php'
+    'PHP_SELF' => '/advance/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471499283.434
+    'REQUEST_TIME' => 1471499283
+]
+2016-08-18 08:11:39 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '$model' (T_VARIABLE) in C:\xampp\htdocs\advance\backend\controllers\ServicereportController.php:88
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(562): class_exists('backend\\control...')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('servicereport')
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('create')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\advance\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-08-18 08:11:39 [::1][-][-][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    'PHPBACKSESSID' => 'hdnqsuqcmfl3n2rt0bkbjldj76'
+    '_backendCSRF' => '98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"-WOkscCjwJY4O4lTpfyYjI31avyJUiBA\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/backend/web/index.php?ServicereportSearch%5BWeatherStation_id%5D=Bicutan&ServicereportSearch%5BDateStarted%5D=&ServicereportSearch%5BDateEnd%5D=&ServicereportSearch%5BAuthor%5D=&ServicereportSearch%5BManager%5D=&r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPBACKSESSID=hdnqsuqcmfl3n2rt0bkbjldj76; _backendCSRF=98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22-WOkscCjwJY4O4lTpfyYjI31avyJUiBA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Ruby22\\bin;C:\\Users\\student\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/backend/web/index.php'
+    'REMOTE_PORT' => '8503'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fcreate'
+    'REQUEST_URI' => '/advance/backend/web/index.php?r=servicereport%2Fcreate'
+    'SCRIPT_NAME' => '/advance/backend/web/index.php'
+    'PHP_SELF' => '/advance/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471500699.565
+    'REQUEST_TIME' => 1471500699
+]
+2016-08-18 08:12:29 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\advance\backend\controllers\ServicereportController.php:89
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(562): class_exists('backend\\control...')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('servicereport')
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('create')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\advance\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-08-18 08:12:29 [::1][-][-][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    'PHPBACKSESSID' => 'hdnqsuqcmfl3n2rt0bkbjldj76'
+    '_backendCSRF' => '98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"-WOkscCjwJY4O4lTpfyYjI31avyJUiBA\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/backend/web/index.php?ServicereportSearch%5BWeatherStation_id%5D=Bicutan&ServicereportSearch%5BDateStarted%5D=&ServicereportSearch%5BDateEnd%5D=&ServicereportSearch%5BAuthor%5D=&ServicereportSearch%5BManager%5D=&r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPBACKSESSID=hdnqsuqcmfl3n2rt0bkbjldj76; _backendCSRF=98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22-WOkscCjwJY4O4lTpfyYjI31avyJUiBA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Ruby22\\bin;C:\\Users\\student\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/backend/web/index.php'
+    'REMOTE_PORT' => '8520'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fcreate'
+    'REQUEST_URI' => '/advance/backend/web/index.php?r=servicereport%2Fcreate'
+    'SCRIPT_NAME' => '/advance/backend/web/index.php'
+    'PHP_SELF' => '/advance/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471500749.295
+    'REQUEST_TIME' => 1471500749
+]
+2016-08-18 08:12:30 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\advance\backend\controllers\ServicereportController.php:89
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(562): class_exists('backend\\control...')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('servicereport')
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('create')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\advance\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-08-18 08:12:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    'PHPBACKSESSID' => 'hdnqsuqcmfl3n2rt0bkbjldj76'
+    '_backendCSRF' => '98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"-WOkscCjwJY4O4lTpfyYjI31avyJUiBA\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/backend/web/index.php?ServicereportSearch%5BWeatherStation_id%5D=Bicutan&ServicereportSearch%5BDateStarted%5D=&ServicereportSearch%5BDateEnd%5D=&ServicereportSearch%5BAuthor%5D=&ServicereportSearch%5BManager%5D=&r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPBACKSESSID=hdnqsuqcmfl3n2rt0bkbjldj76; _backendCSRF=98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22-WOkscCjwJY4O4lTpfyYjI31avyJUiBA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Ruby22\\bin;C:\\Users\\student\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/backend/web/index.php'
+    'REMOTE_PORT' => '8519'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fcreate'
+    'REQUEST_URI' => '/advance/backend/web/index.php?r=servicereport%2Fcreate'
+    'SCRIPT_NAME' => '/advance/backend/web/index.php'
+    'PHP_SELF' => '/advance/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471500750.067
+    'REQUEST_TIME' => 1471500750
+]
+2016-08-18 08:12:30 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\advance\backend\controllers\ServicereportController.php:89
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(562): class_exists('backend\\control...')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('servicereport')
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('create')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\advance\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-08-18 08:12:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    'PHPBACKSESSID' => 'hdnqsuqcmfl3n2rt0bkbjldj76'
+    '_backendCSRF' => '98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"-WOkscCjwJY4O4lTpfyYjI31avyJUiBA\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/backend/web/index.php?ServicereportSearch%5BWeatherStation_id%5D=Bicutan&ServicereportSearch%5BDateStarted%5D=&ServicereportSearch%5BDateEnd%5D=&ServicereportSearch%5BAuthor%5D=&ServicereportSearch%5BManager%5D=&r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPBACKSESSID=hdnqsuqcmfl3n2rt0bkbjldj76; _backendCSRF=98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22-WOkscCjwJY4O4lTpfyYjI31avyJUiBA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Ruby22\\bin;C:\\Users\\student\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/backend/web/index.php'
+    'REMOTE_PORT' => '8518'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fcreate'
+    'REQUEST_URI' => '/advance/backend/web/index.php?r=servicereport%2Fcreate'
+    'SCRIPT_NAME' => '/advance/backend/web/index.php'
+    'PHP_SELF' => '/advance/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471500750.212
+    'REQUEST_TIME' => 1471500750
+]
+2016-08-18 08:12:30 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\advance\backend\controllers\ServicereportController.php:89
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(562): class_exists('backend\\control...')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('servicereport')
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('create')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\advance\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-08-18 08:12:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    'PHPBACKSESSID' => 'hdnqsuqcmfl3n2rt0bkbjldj76'
+    '_backendCSRF' => '98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"-WOkscCjwJY4O4lTpfyYjI31avyJUiBA\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/backend/web/index.php?ServicereportSearch%5BWeatherStation_id%5D=Bicutan&ServicereportSearch%5BDateStarted%5D=&ServicereportSearch%5BDateEnd%5D=&ServicereportSearch%5BAuthor%5D=&ServicereportSearch%5BManager%5D=&r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPBACKSESSID=hdnqsuqcmfl3n2rt0bkbjldj76; _backendCSRF=98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22-WOkscCjwJY4O4lTpfyYjI31avyJUiBA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Ruby22\\bin;C:\\Users\\student\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/backend/web/index.php'
+    'REMOTE_PORT' => '8517'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fcreate'
+    'REQUEST_URI' => '/advance/backend/web/index.php?r=servicereport%2Fcreate'
+    'SCRIPT_NAME' => '/advance/backend/web/index.php'
+    'PHP_SELF' => '/advance/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471500750.402
+    'REQUEST_TIME' => 1471500750
+]
+2016-08-18 08:12:30 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\advance\backend\controllers\ServicereportController.php:89
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(562): class_exists('backend\\control...')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('servicereport')
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('create')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\advance\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-08-18 08:12:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    'PHPBACKSESSID' => 'hdnqsuqcmfl3n2rt0bkbjldj76'
+    '_backendCSRF' => '98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"-WOkscCjwJY4O4lTpfyYjI31avyJUiBA\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/backend/web/index.php?ServicereportSearch%5BWeatherStation_id%5D=Bicutan&ServicereportSearch%5BDateStarted%5D=&ServicereportSearch%5BDateEnd%5D=&ServicereportSearch%5BAuthor%5D=&ServicereportSearch%5BManager%5D=&r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPBACKSESSID=hdnqsuqcmfl3n2rt0bkbjldj76; _backendCSRF=98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22-WOkscCjwJY4O4lTpfyYjI31avyJUiBA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Ruby22\\bin;C:\\Users\\student\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/backend/web/index.php'
+    'REMOTE_PORT' => '8516'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fcreate'
+    'REQUEST_URI' => '/advance/backend/web/index.php?r=servicereport%2Fcreate'
+    'SCRIPT_NAME' => '/advance/backend/web/index.php'
+    'PHP_SELF' => '/advance/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471500750.57
+    'REQUEST_TIME' => 1471500750
+]
+2016-08-18 08:12:30 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\advance\backend\controllers\ServicereportController.php:89
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(562): class_exists('backend\\control...')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('servicereport')
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('create')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\advance\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-08-18 08:12:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    'PHPBACKSESSID' => 'hdnqsuqcmfl3n2rt0bkbjldj76'
+    '_backendCSRF' => '98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"-WOkscCjwJY4O4lTpfyYjI31avyJUiBA\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/backend/web/index.php?ServicereportSearch%5BWeatherStation_id%5D=Bicutan&ServicereportSearch%5BDateStarted%5D=&ServicereportSearch%5BDateEnd%5D=&ServicereportSearch%5BAuthor%5D=&ServicereportSearch%5BManager%5D=&r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPBACKSESSID=hdnqsuqcmfl3n2rt0bkbjldj76; _backendCSRF=98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22-WOkscCjwJY4O4lTpfyYjI31avyJUiBA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Ruby22\\bin;C:\\Users\\student\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/backend/web/index.php'
+    'REMOTE_PORT' => '8515'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fcreate'
+    'REQUEST_URI' => '/advance/backend/web/index.php?r=servicereport%2Fcreate'
+    'SCRIPT_NAME' => '/advance/backend/web/index.php'
+    'PHP_SELF' => '/advance/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471500750.77
+    'REQUEST_TIME' => 1471500750
+]
+2016-08-18 08:12:31 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\advance\backend\controllers\ServicereportController.php:89
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(562): class_exists('backend\\control...')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('servicereport')
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('create')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\advance\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-08-18 08:12:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    'PHPBACKSESSID' => 'hdnqsuqcmfl3n2rt0bkbjldj76'
+    '_backendCSRF' => '98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"-WOkscCjwJY4O4lTpfyYjI31avyJUiBA\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/backend/web/index.php?ServicereportSearch%5BWeatherStation_id%5D=Bicutan&ServicereportSearch%5BDateStarted%5D=&ServicereportSearch%5BDateEnd%5D=&ServicereportSearch%5BAuthor%5D=&ServicereportSearch%5BManager%5D=&r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPBACKSESSID=hdnqsuqcmfl3n2rt0bkbjldj76; _backendCSRF=98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22-WOkscCjwJY4O4lTpfyYjI31avyJUiBA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Ruby22\\bin;C:\\Users\\student\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/backend/web/index.php'
+    'REMOTE_PORT' => '8521'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fcreate'
+    'REQUEST_URI' => '/advance/backend/web/index.php?r=servicereport%2Fcreate'
+    'SCRIPT_NAME' => '/advance/backend/web/index.php'
+    'PHP_SELF' => '/advance/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471500750.982
+    'REQUEST_TIME' => 1471500750
+]
+2016-08-18 08:12:31 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\advance\backend\controllers\ServicereportController.php:89
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(562): class_exists('backend\\control...')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('servicereport')
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('create')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\advance\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-08-18 08:12:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    'PHPBACKSESSID' => 'hdnqsuqcmfl3n2rt0bkbjldj76'
+    '_backendCSRF' => '98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"-WOkscCjwJY4O4lTpfyYjI31avyJUiBA\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/backend/web/index.php?ServicereportSearch%5BWeatherStation_id%5D=Bicutan&ServicereportSearch%5BDateStarted%5D=&ServicereportSearch%5BDateEnd%5D=&ServicereportSearch%5BAuthor%5D=&ServicereportSearch%5BManager%5D=&r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPBACKSESSID=hdnqsuqcmfl3n2rt0bkbjldj76; _backendCSRF=98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22-WOkscCjwJY4O4lTpfyYjI31avyJUiBA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Ruby22\\bin;C:\\Users\\student\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/backend/web/index.php'
+    'REMOTE_PORT' => '8522'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fcreate'
+    'REQUEST_URI' => '/advance/backend/web/index.php?r=servicereport%2Fcreate'
+    'SCRIPT_NAME' => '/advance/backend/web/index.php'
+    'PHP_SELF' => '/advance/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471500751.178
+    'REQUEST_TIME' => 1471500751
+]
+2016-08-18 08:12:31 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\advance\backend\controllers\ServicereportController.php:89
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(562): class_exists('backend\\control...')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('servicereport')
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('create')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\advance\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2016-08-18 08:12:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    'PHPBACKSESSID' => 'hdnqsuqcmfl3n2rt0bkbjldj76'
+    '_backendCSRF' => '98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"-WOkscCjwJY4O4lTpfyYjI31avyJUiBA\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/backend/web/index.php?ServicereportSearch%5BWeatherStation_id%5D=Bicutan&ServicereportSearch%5BDateStarted%5D=&ServicereportSearch%5BDateEnd%5D=&ServicereportSearch%5BAuthor%5D=&ServicereportSearch%5BManager%5D=&r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPBACKSESSID=hdnqsuqcmfl3n2rt0bkbjldj76; _backendCSRF=98b4f29fe64e94840411508b816f8edf56287457d3162feace88664c9700b77aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22-WOkscCjwJY4O4lTpfyYjI31avyJUiBA%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\TortoiseGit\\bin;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Ruby22\\bin;C:\\Users\\student\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.6'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/backend/web/index.php'
+    'REMOTE_PORT' => '8523'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fcreate'
+    'REQUEST_URI' => '/advance/backend/web/index.php?r=servicereport%2Fcreate'
+    'SCRIPT_NAME' => '/advance/backend/web/index.php'
+    'PHP_SELF' => '/advance/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471500751.419
+    'REQUEST_TIME' => 1471500751
+]
