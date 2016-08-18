@@ -8,7 +8,7 @@ use common\models\AdminSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use common\models\User;
 
 /**
  * AdminController implements the CRUD actions for Admin model.
@@ -67,7 +67,8 @@ class AdminController extends Controller
         $model = new Admin();
 
         if ($model->load(Yii::$app->request->post())) {
-
+            $model=User::findOne(['username' => 'Admin.username']);
+            $model->isNewRecord = false;
 
             $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
