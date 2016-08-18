@@ -49,7 +49,7 @@ class Weatherstation extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
+            'id' => 'Weather Station ID',
             'WeatherStation_Model' => 'Weather Station  Model',
             'WeatherStation_Name' => 'Weather Station  Name',
             'WeatherStation_Location' => 'Weather Station  Location',

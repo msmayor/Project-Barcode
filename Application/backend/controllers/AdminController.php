@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+
 /**
  * AdminController implements the CRUD actions for Admin model.
  */
@@ -65,8 +66,12 @@ class AdminController extends Controller
     {
         $model = new Admin();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+
+
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
+            
         } else {
             return $this->render('create', [
                 'model' => $model,

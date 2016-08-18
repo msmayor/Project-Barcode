@@ -81,6 +81,7 @@ class ServicereportController extends Controller
 
 
             $documentName = $model->id;
+            
             $model->file = UploadedFile::getInstance($model,'file');
             $model->file->saveAs( 'uploads/'.$documentName.'.'.$model->file->extension );
             $model->Document = 'uploads/'.$documentName.'.'.$model->file->extension;
@@ -103,6 +104,7 @@ class ServicereportController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
