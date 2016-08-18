@@ -36,7 +36,7 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'Admin upgrade', 'url' => ['admin/index']],
+        ['label' => 'Admin Management', 'url' => ['admin/index']],
         ['label' => 'Service Report', 'url' => ['/servicereport/index']],
         ['label' => 'Weather Station', 'url' => ['/weatherstation/index']],
     ];
