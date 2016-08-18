@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'weatherStation.id',
+            //'weatherStation.id',
             [
                 'attribute'=>'WeatherStation_id',
                 'value'=>'weatherStation.WeatherStation_Location',
