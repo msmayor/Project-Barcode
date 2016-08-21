@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 17, 2016 at 02:53 PM
+-- Generation Time: Aug 21, 2016 at 07:32 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.21
 
@@ -85,16 +85,17 @@ CREATE TABLE `servicereport` (
   `Author` varchar(200) NOT NULL,
   `Manager` varchar(200) NOT NULL,
   `WeatherStation_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `Document` int(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `servicereport`
 --
 
-INSERT INTO `servicereport` (`id`, `DateStarted`, `DateEnd`, `Author`, `Manager`, `WeatherStation_id`, `user_id`) VALUES
-(2, '2016-08-01', '2016-08-06', 'Adrian Tobias', 'Alvin Tobias', 3, 4),
-(3, '2016-07-11', '2016-08-11', 'Adrian Tobias', 'Alvin Tobias', 2, 4);
+INSERT INTO `servicereport` (`id`, `DateStarted`, `DateEnd`, `Author`, `Manager`, `WeatherStation_id`, `user_id`, `Document`) VALUES
+(2, '2016-08-01', '2016-08-06', 'Adrian Tobias', 'Alvin Tobias', 3, 4, 0),
+(3, '2016-07-11', '2016-08-11', 'Adrian Tobias', 'Alvin Tobias', 2, 4, 0);
 
 -- --------------------------------------------------------
 
