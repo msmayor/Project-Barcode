@@ -59,7 +59,7 @@ use kartik\select2\Select2;
 
     <?= $form->field($model, 'Manager')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'Document' )->fileInput(); ?>
+    <?= $form->field($model, 'Document' )->fileInput() ?>
 
     <?= $form->field($model, 'user_id')->widget(Select2::classname(), [
             'data' => ArrayHelper::map(user::find()->all(),'id','email'),
