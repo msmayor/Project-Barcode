@@ -18,5 +18,6 @@ return array(
     'kartik\\base\\' => array($vendorDir . '/kartik-v/yii2-krajee-base'),
     'dosamigos\\datepicker\\' => array($vendorDir . '/2amigos/yii2-date-picker-widget/src'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
+    'barcode\\barcode\\' => array($vendorDir . '/vilochane/yii2-barcode-generator'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
 );

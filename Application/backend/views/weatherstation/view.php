@@ -2,11 +2,13 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use barcode\barcode\BarcodeGenerator;
+use yii\grid\GridView;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Weatherstation */
 
-$this->title = $model->id;
+$this->title = $model->WeatherStation_Location;
 $this->params['breadcrumbs'][] = ['label' => 'Weatherstations', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -23,6 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+      
     </p>
 
     <?= DetailView::widget([
@@ -36,7 +39,20 @@ $this->params['breadcrumbs'][] = $this->title;
             'WeatherStation_Gateway',
             'WeatherStation_Logger',
             'WeatherStation_Number',
-        ],
+            ],
     ]) ?>
 
+<html><div id="ShowBarcode"></div></html>
+
+<?= 
+
+ BarcodeGenerator::widget([
+    'elementId'=> 'ShowBarcode', /* div or canvas id*/
+    'value'=> $model->WeatherStation_Location, /* value for EAN 13 be careful to set right values for each barcode type */
+    'type'=>'datamatrix',/*supported types  ean8, ean13, upc, std25, int25, code11, code39, code93, code128, codabar, msi, datamatrix*/
+
+    ]);
+
+?>
+        
 </div>

@@ -36,6 +36,10 @@ class ComposerStaticInit97f60f486aee3c9bc14072d1bbd961d8
         array (
             'cebe\\markdown\\' => 14,
         ),
+        'b' => 
+        array (
+            'barcode\\barcode\\' => 16,
+        ),
         'F' => 
         array (
             'Faker\\' => 6,
@@ -90,6 +94,10 @@ class ComposerStaticInit97f60f486aee3c9bc14072d1bbd961d8
         'cebe\\markdown\\' => 
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
+        ),
+        'barcode\\barcode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vilochane/yii2-barcode-generator',
         ),
         'Faker\\' => 
         array (

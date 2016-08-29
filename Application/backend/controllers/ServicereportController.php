@@ -23,7 +23,6 @@ class ServicereportController extends Controller
         return [
             'access'=>[
                     'class'=>AccessControl::classname(),
-                    'only'=>['create','update'],
                     'rules'=>[
                         [
                             'allow'=>true,
@@ -65,6 +64,7 @@ class ServicereportController extends Controller
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
+       
     }
 
     /**
@@ -89,7 +89,7 @@ class ServicereportController extends Controller
             $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
-            return $this->render('create', [
+            return $this->renderAjax('create', [
                 'model' => $model,
             ]);
         }

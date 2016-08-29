@@ -36,7 +36,7 @@ class Weatherstation extends \yii\db\ActiveRecord
         return [
             [['WeatherStation_Model', 'WeatherStation_Name', 'WeatherStation_Location', 'WeatherStation_Status', 'WeatherStation_Gateway', 'WeatherStation_Logger', 'WeatherStation_Number'], 'required'],
             [['WeatherStation_Status'], 'string'],
-            [['WeatherStation_Model', 'WeatherStation_Name'], 'string', 'max' => 200],
+            [['WeatherStation_Model', 'WeatherStation_Name','barcode_no'], 'string', 'max' => 200],
             [['WeatherStation_Location'], 'string', 'max' => 300],
             [['WeatherStation_Gateway', 'WeatherStation_Logger'], 'string', 'max' => 45],
             [['WeatherStation_Number'], 'string', 'max' => 11],

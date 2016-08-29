@@ -22,7 +22,6 @@ class WeatherstationController extends Controller
         return [
             'access'=>[
                         'class'=>AccessControl::classname(),
-                        'only'=>['create','update'],
                         'rules'=>[
                             [
                                 'allow'=>true,
@@ -64,6 +63,7 @@ class WeatherstationController extends Controller
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
+
     }
 
     /**
@@ -77,6 +77,7 @@ class WeatherstationController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
+            
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -131,4 +132,5 @@ class WeatherstationController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+    
 }

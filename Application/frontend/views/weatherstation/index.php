@@ -21,14 +21,25 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'rowOptions' =>function($model){
+                    if($model->WeatherStation_Status == 'On')
+                    {
+                        return ['class'=>'success'];
+                    }else if ($model->WeatherStation_Status == 'Off')
+                    {
+                        return ['class'=>'danger'];
+                    }
+
+        },
+        
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            // 'id',
             'WeatherStation_Model',
             'WeatherStation_Name',
             'WeatherStation_Location',
-            'WeatherStation_Status',
+            // 'WeatherStation_Status',
             // 'WeatherStation_Gateway',
             // 'WeatherStation_Logger',
             // 'WeatherStation_Number',
