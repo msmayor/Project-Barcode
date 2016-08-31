@@ -80,9 +80,9 @@ class ServicereportController extends Controller
         if ($model->load(Yii::$app->request->post())) {
 
 
-            $documentName = $model->id;
+            $documentName = $model->DateStarted;
             
-            $model->file = UploadedFile::getInstance($model,'file');
+            $model->file = UploadedFile::getInstance($model,'Document');
             $model->file->saveAs( 'uploads/'.$documentName.'.'.$model->file->extension );
             $model->Document = 'uploads/'.$documentName.'.'.$model->file->extension;
 

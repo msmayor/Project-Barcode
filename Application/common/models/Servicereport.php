@@ -59,7 +59,7 @@ class Servicereport extends \yii\db\ActiveRecord
             'Manager' => 'Manager',
             'WeatherStation_id' => 'Weather Station Location',
             'user_id' => 'Employee Email',
-            'Document' => 'Document',
+            'file' => 'Document',
         ];
     }
 

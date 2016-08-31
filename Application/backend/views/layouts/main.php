@@ -29,7 +29,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => 'Weather.ph',
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandUrl' => 'http://localhost/advance/frontend/web/index.php',
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
