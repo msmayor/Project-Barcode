@@ -22,7 +22,6 @@ class WeatherstationController extends Controller
         return [
             'access'=>[
                         'class'=>AccessControl::classname(),
-                        'only'=>['create','update'],
                         'rules'=>[
                             [
                                 'allow'=>true,

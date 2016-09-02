@@ -11,7 +11,7 @@ use yii\helpers\Url;
 /* @var $searchModel common\models\ServicereportSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Servicereports';
+$this->title = 'Service Reports';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="servicereport-index">

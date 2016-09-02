@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel common\models\WeatherstationSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Weatherstations';
+$this->title = 'Weather Stations';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="weatherstation-index">
