@@ -78,16 +78,17 @@ class ServicereportController extends Controller
 
         
         if ($model->load(Yii::$app->request->post())) {
-
-
+ 
             $documentName = $model->DateStarted;
             
             $model->file = UploadedFile::getInstance($model,'Document');
             $model->file->saveAs( 'uploads/servicereport'.$documentName.'.'.$model->file->extension );
             $model->Document = 'uploads/servicereport'.$documentName.'.'.$model->file->extension;
-
             $model->save();
+                      
+
             return $this->redirect(['view', 'id' => $model->id]);
+
         } else {
             return $this->renderAjax('create', [
                 'model' => $model,

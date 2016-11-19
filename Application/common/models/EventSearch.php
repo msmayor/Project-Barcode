@@ -19,7 +19,7 @@ class EventSearch extends Event
     {
         return [
             [['id'], 'integer'],
-            [['title', 'description', 'created_date'], 'safe'],
+            [['title', 'description', 'start_date', 'end_date'], 'safe'],
         ];
     }
 
@@ -60,11 +60,12 @@ class EventSearch extends Event
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'start_date' => $this->start_date,
+            'end_date' => $this->end_date,
         ]);
 
         $query->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'description', $this->description])
-            ->andFilterWhere(['like', 'created_date', $this->created_date]);
+            ->andFilterWhere(['like', 'description', $this->description]);
 
         return $dataProvider;
     }

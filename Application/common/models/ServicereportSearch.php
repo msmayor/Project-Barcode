@@ -15,11 +15,13 @@ class ServicereportSearch extends Servicereport
     /**
      * @inheritdoc
      */
+
+    public $globalSearch;
     public function rules()
     {
         return [
             [['id', 'user_id'], 'integer'],
-            [['DateStarted', 'DateEnd', 'Author', 'Manager', 'WeatherStation_id'], 'safe'],
+            [['DateStarted','globalSearch', 'DateEnd', 'Author', 'Manager', 'WeatherStation_id'], 'safe'],
         ];
     }
 
@@ -61,16 +63,11 @@ class ServicereportSearch extends Servicereport
 
 
         // grid filtering conditions
-        $query->andFilterWhere([
-            'id' => $this->id,
-            'DateStarted' => $this->DateStarted,
-            'DateEnd' => $this->DateEnd,
-            'user_id' => $this->user_id,
-        ]);
+        
 
-        $query->andFilterWhere(['like', 'Author', $this->Author])
-            ->andFilterWhere(['like', 'Manager', $this->Manager])
-            ->andFilterWhere(['like', 'WeatherStation.WeatherStation_Location', $this->WeatherStation_id]);
+        $query->orFilterWhere(['like', 'Author', $this->globalSearch])
+            ->orFilterWhere(['like', 'Manager', $this->globalSearch])
+            ->orFilterWhere(['like', 'WeatherStation.WeatherStation_Location', $this->globalSearch]);
 
         return $dataProvider;
     }

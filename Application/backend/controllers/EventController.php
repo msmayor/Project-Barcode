@@ -35,12 +35,19 @@ class EventController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new EventSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+       $events = Event::find()->all();
+       $tasks = [];
+       foreach ($events as $specific){
+            $event = new \yii2fullcalendar\models\Event();
+            $event->id = $specific->id;
+            $event->title = $specific->title;
+            $event->start = $specific->start_date;
+        $event->end = $specific->end_date;
+            $tasks[] = $event;
 
+       }
         return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
+            'events' => $tasks,
         ]);
     }
 
@@ -61,14 +68,14 @@ class EventController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
-    {
+    public function actionCreate($date)
+   {
         $model = new Event();
-
+        $model->start_date = $date;
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index']);
         } else {
-            return $this->render('create', [
+            return $this->renderAjax('create', [
                 'model' => $model,
             ]);
         }

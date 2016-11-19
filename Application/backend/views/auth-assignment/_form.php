@@ -17,7 +17,7 @@ use common\models\User;
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
     <?= $form->field($model, 'item_name')->widget(Select2::classname(), [
-            'data' => ArrayHelper::map(AuthItem::find()->all(),'name','name'),
+            'data' => ArrayHelper::map(AuthItem::findBySql('SELECT * FROM auth_item WHERE type = 2' )->all(),'name','name'),
             'language' => 'en',
             'options' => ['placeholder' => 'Select a Privilege ...'],
             'pluginOptions' => [
@@ -26,7 +26,7 @@ use common\models\User;
             ]); ?>
 
     <?= $form->field($model, 'user_id')->widget(Select2::classname(), [
-            'data' => ArrayHelper::map(User::find()->all(),'id','username'),
+            'data' => ArrayHelper::map(User::find()->all(),'id','fullName'),
             'language' => 'en',
             'options' => ['placeholder' => 'Select a User ...'],
             'pluginOptions' => [

@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'item_name',
             [
                 'attribute'=>'user_id',
-                'value'=>'user.username',
+                'value'=>'user.fullName',
             ],
         
 

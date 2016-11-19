@@ -15,11 +15,12 @@ class WeatherstationSearch extends Weatherstation
     /**
      * @inheritdoc
      */
+    public $globalSearch;
     public function rules()
     {
         return [
             [['id'], 'integer'],
-            [['WeatherStation_Model', 'WeatherStation_Name', 'WeatherStation_Location', 'WeatherStation_Status', 'WeatherStation_Gateway', 'WeatherStation_Logger', 'WeatherStation_Number'], 'safe'],
+            [['WeatherStation_Model', 'WeatherStation_Name', 'WeatherStation_Location', 'WeatherStation_Status', 'WeatherStation_Gateway', 'WeatherStation_Logger', 'WeatherStation_Number', 'globalSearch'], 'safe'],
         ];
     }
 
@@ -62,13 +63,13 @@ class WeatherstationSearch extends Weatherstation
             'id' => $this->id,
         ]);
 
-        $query->andFilterWhere(['like', 'WeatherStation_Model', $this->WeatherStation_Model])
-            ->andFilterWhere(['like', 'WeatherStation_Name', $this->WeatherStation_Name])
-            ->andFilterWhere(['like', 'WeatherStation_Location', $this->WeatherStation_Location])
-            ->andFilterWhere(['like', 'WeatherStation_Status', $this->WeatherStation_Status])
-            ->andFilterWhere(['like', 'WeatherStation_Gateway', $this->WeatherStation_Gateway])
-            ->andFilterWhere(['like', 'WeatherStation_Logger', $this->WeatherStation_Logger])
-            ->andFilterWhere(['like', 'WeatherStation_Number', $this->WeatherStation_Number]);
+        $query->orFilterWhere(['like', 'WeatherStation_Model', $this->globalSearch])
+            ->orFilterWhere(['like', 'WeatherStation_Name', $this->globalSearch])
+            ->orFilterWhere(['like', 'WeatherStation_Location', $this->globalSearch])
+            ->orFilterWhere(['like', 'WeatherStation_Status', $this->globalSearch])
+            ->orFilterWhere(['like', 'WeatherStation_Gateway', $this->globalSearch])
+            ->orFilterWhere(['like', 'WeatherStation_Logger', $this->globalSearch])
+            ->orFilterWhere(['like', 'WeatherStation_Number', $this->globalSearch]);
 
         return $dataProvider;
     }

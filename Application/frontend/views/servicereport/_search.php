@@ -15,16 +15,9 @@ use yii\widgets\ActiveForm;
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'id') ?>
+    <?= $form->field($model, 'globalSearch') ?>
 
-    <?= $form->field($model, 'DateStarted') ?>
-
-    <?= $form->field($model, 'DateEnd') ?>
-
-    <?= $form->field($model, 'Author') ?>
-
-    <?= $form->field($model, 'Manager') ?>
-
+   
     <?php // echo $form->field($model, 'WeatherStation_id') ?>
 
     <?php // echo $form->field($model, 'user_id') ?>

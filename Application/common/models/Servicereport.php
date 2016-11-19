@@ -36,8 +36,8 @@ class Servicereport extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['DateStarted', 'DateEnd', 'Author', 'Manager', 'WeatherStation_id', 'user_id'], 'required'],
-            [['DateStarted', 'DateEnd'], 'safe'],
+            [['DateStarted', 'DateEnd', 'Author', 'Manager', 'WeatherStation_id'], 'required'],
+            [['DateStarted', 'DateEnd','user_id'], 'safe'],
             [['user_id'], 'integer'],
             [['file'],'file'],
             [['Author','Document', 'Manager'], 'string', 'max' => 200],
@@ -76,6 +76,6 @@ class Servicereport extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(User::className(), ['id' => 'user_ID']);
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 }

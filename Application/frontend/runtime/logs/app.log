@@ -8213,3 +8213,725 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1477269297.39
     'REQUEST_TIME' => 1477269297
 ]
+2016-10-31 07:48:13 [::1][4][5khq2c4918gaucl9j5ff68gsv7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Weatherstation::Weatherstation_Location' in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('Weatherstation_...')
+#1 C:\xampp\htdocs\advance\frontend\views\weatherstation\update.php(8): yii\db\BaseActiveRecord->__get('Weatherstation_...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\WeatherstationController))
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('update', Array, Object(frontend\controllers\WeatherstationController))
+#6 C:\xampp\htdocs\advance\frontend\controllers\WeatherstationController.php(109): yii\base\Controller->render('update', Array)
+#7 [internal function]: frontend\controllers\WeatherstationController->actionUpdate('8')
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('update', Array)
+#11 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('weatherstation/...', Array)
+#12 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2016-10-31 07:48:13 [::1][4][5khq2c4918gaucl9j5ff68gsv7][info][application] $_GET = [
+    'r' => 'weatherstation/update'
+    'id' => '8'
+]
+
+$_COOKIE = [
+    '_backendUser' => 'a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    'PHPBACKSESSID' => 'ft5pmhtfms5rrvvdi6dpcv5fk2'
+    '_backendCSRF' => 'eea533c2029f68eafec9306b88f4c2bb1b75c56afcc20561405a25e5c340ecd2a:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"UPedjE9GrYh-8tq6lNg_ul6YGoljl2VN\";}'
+    'PHPFRONTSESSID' => '5khq2c4918gaucl9j5ff68gsv7'
+    '_frontendCSRF' => 'c9e8d442d9868fed5ebdf7fe39a2928a0c4bf79508d2bd7f07b4dfcac7b404a1a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"51ti7JUoo1XoFbjcyYmCsKj7Ln4SDQuL\";}'
+    '_frontendUser' => '7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advance/frontend/web/index.php?r=servicereport%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advance/frontend/web/index.php?r=weatherstation%2Findex'
+    'HTTP_COOKIE' => '_backendUser=a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=ft5pmhtfms5rrvvdi6dpcv5fk2; _backendCSRF=eea533c2029f68eafec9306b88f4c2bb1b75c56afcc20561405a25e5c340ecd2a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22UPedjE9GrYh-8tq6lNg_ul6YGoljl2VN%22%3B%7D; PHPFRONTSESSID=5khq2c4918gaucl9j5ff68gsv7; _frontendCSRF=c9e8d442d9868fed5ebdf7fe39a2928a0c4bf79508d2bd7f07b4dfcac7b404a1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%2251ti7JUoo1XoFbjcyYmCsKj7Ln4SDQuL%22%3B%7D; _frontendUser=7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\CloudFoundry;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '13036'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=weatherstation%2Fupdate&id=8'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=weatherstation%2Fupdate&id=8'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477896493.025
+    'REQUEST_TIME' => 1477896493
+]
+2016-10-31 10:06:54 [::1][4][5khq2c4918gaucl9j5ff68gsv7][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?>'' in C:\xampp\htdocs\advance\frontend\views\weatherstation\index.php:24
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-10-31 10:06:54 [::1][4][5khq2c4918gaucl9j5ff68gsv7][info][application] $_GET = [
+    'r' => 'weatherstation/index'
+]
+
+$_COOKIE = [
+    '_backendUser' => 'a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    'PHPBACKSESSID' => 'ft5pmhtfms5rrvvdi6dpcv5fk2'
+    '_backendCSRF' => 'eea533c2029f68eafec9306b88f4c2bb1b75c56afcc20561405a25e5c340ecd2a:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"UPedjE9GrYh-8tq6lNg_ul6YGoljl2VN\";}'
+    'PHPFRONTSESSID' => '5khq2c4918gaucl9j5ff68gsv7'
+    '_frontendCSRF' => 'c9e8d442d9868fed5ebdf7fe39a2928a0c4bf79508d2bd7f07b4dfcac7b404a1a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"51ti7JUoo1XoFbjcyYmCsKj7Ln4SDQuL\";}'
+    '_frontendUser' => '7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advance/frontend/web/index.php?r=servicereport%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advance/frontend/web/index.php?r=servicereport%2Findex'
+    'HTTP_COOKIE' => '_backendUser=a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=ft5pmhtfms5rrvvdi6dpcv5fk2; _backendCSRF=eea533c2029f68eafec9306b88f4c2bb1b75c56afcc20561405a25e5c340ecd2a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22UPedjE9GrYh-8tq6lNg_ul6YGoljl2VN%22%3B%7D; PHPFRONTSESSID=5khq2c4918gaucl9j5ff68gsv7; _frontendCSRF=c9e8d442d9868fed5ebdf7fe39a2928a0c4bf79508d2bd7f07b4dfcac7b404a1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%2251ti7JUoo1XoFbjcyYmCsKj7Ln4SDQuL%22%3B%7D; _frontendUser=7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\CloudFoundry;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '14410'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=weatherstation%2Findex'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=weatherstation%2Findex'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477904814.045
+    'REQUEST_TIME' => 1477904814
+]
+2016-10-31 13:31:57 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function frontend\controllers\all()' in C:\xampp\htdocs\advance\frontend\controllers\EventController.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-10-31 13:31:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'event'
+]
+
+$_COOKIE = [
+    '_backendUser' => 'a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    '_frontendUser' => '7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    'PHPBACKSESSID' => '91rk1smbmm1i2ua7vassq97vd0'
+    '_backendCSRF' => '383f3d487ea4bc6b0de00ffe3f54b10eddb79b91a23a0c24019291d5c9775623a:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"1KSJJHT3R35mrUi5g-_eDTKIKHTJbIgo\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_backendUser=a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; _frontendUser=7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=91rk1smbmm1i2ua7vassq97vd0; _backendCSRF=383f3d487ea4bc6b0de00ffe3f54b10eddb79b91a23a0c24019291d5c9775623a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%221KSJJHT3R35mrUi5g-_eDTKIKHTJbIgo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\CloudFoundry;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '16815'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=event'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=event'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477917117.697
+    'REQUEST_TIME' => 1477917117
+]
+2016-10-31 13:43:18 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Missing required parameter "time" when instantiating "DateTime".' in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\di\Container.php:458
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\di\Container.php(368): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('datetime', Array, Array)
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('datetime', Array, Array)
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\validators\Validator.php(209): yii\BaseYii::createObject(Array)
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(445): yii\validators\Validator::createValidator('datetime', Object(common\models\Event), Array, Array)
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(409): yii\base\Model->createValidators()
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(185): yii\base\Model->getValidators()
+#7 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(751): yii\base\Model->scenarios()
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#12 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\generators\crud\Generator.php(182): yii\gii\Generator->render('views/_form.php')
+#13 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(50): yii\gii\generators\crud\Generator->generate()
+#14 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('gii/default/vie...', Array)
+#19 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#21 {main}
+2016-10-31 13:43:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_frontendCSRF' => 'UEFUbmMueUsTeAshFUE3LAYRPQkWaRMyGCRhMShHICw1AjoBDBopLQ=='
+    'Generator' => [
+        'modelClass' => 'common\\models\\Event'
+        'searchModelClass' => 'common\\models\\EventSearch'
+        'controllerClass' => 'common\\models\\EventController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    '_backendUser' => 'a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    '_frontendUser' => '7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    'PHPBACKSESSID' => '91rk1smbmm1i2ua7vassq97vd0'
+    '_backendCSRF' => '383f3d487ea4bc6b0de00ffe3f54b10eddb79b91a23a0c24019291d5c9775623a:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"1KSJJHT3R35mrUi5g-_eDTKIKHTJbIgo\";}'
+    'PHPFRONTSESSID' => 'lcj7roipqrgb3vrh1enk5frnv0'
+    '_frontendCSRF' => '8d885a56e8b36e1a5e089e5403f237c5734eaa01c76920e4a1cf3ef6dbc5e321a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"C9_OvoNgVPiguGjyHe5_KiYgeCnoo4Pf\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advance/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_COOKIE' => '_backendUser=a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; _frontendUser=7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=91rk1smbmm1i2ua7vassq97vd0; _backendCSRF=383f3d487ea4bc6b0de00ffe3f54b10eddb79b91a23a0c24019291d5c9775623a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%221KSJJHT3R35mrUi5g-_eDTKIKHTJbIgo%22%3B%7D; PHPFRONTSESSID=lcj7roipqrgb3vrh1enk5frnv0; _frontendCSRF=8d885a56e8b36e1a5e089e5403f237c5734eaa01c76920e4a1cf3ef6dbc5e321a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22C9_OvoNgVPiguGjyHe5_KiYgeCnoo4Pf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '502'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\CloudFoundry;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '17079'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477917798.689
+    'REQUEST_TIME' => 1477917798
+]
+2016-10-31 13:45:04 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Missing required parameter "time" when instantiating "DateTime".' in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\di\Container.php:458
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\di\Container.php(368): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('datetime', Array, Array)
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('datetime', Array, Array)
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\validators\Validator.php(209): yii\BaseYii::createObject(Array)
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(445): yii\validators\Validator::createValidator('datetime', Object(common\models\Event), Array, Array)
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(409): yii\base\Model->createValidators()
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(185): yii\base\Model->getValidators()
+#7 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(751): yii\base\Model->scenarios()
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#12 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\generators\crud\Generator.php(182): yii\gii\Generator->render('views/_form.php')
+#13 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(50): yii\gii\generators\crud\Generator->generate()
+#14 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('gii/default/vie...', Array)
+#19 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#21 {main}
+2016-10-31 13:45:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_frontendCSRF' => 'UEFUbmMueUsTeAshFUE3LAYRPQkWaRMyGCRhMShHICw1AjoBDBopLQ=='
+    'Generator' => [
+        'modelClass' => 'common\\models\\Event'
+        'searchModelClass' => 'common\\models\\EventSearch'
+        'controllerClass' => 'common\\models\\EventController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    '_backendUser' => 'a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    '_frontendUser' => '7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    'PHPBACKSESSID' => '91rk1smbmm1i2ua7vassq97vd0'
+    '_backendCSRF' => '383f3d487ea4bc6b0de00ffe3f54b10eddb79b91a23a0c24019291d5c9775623a:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"1KSJJHT3R35mrUi5g-_eDTKIKHTJbIgo\";}'
+    'PHPFRONTSESSID' => 'lcj7roipqrgb3vrh1enk5frnv0'
+    '_frontendCSRF' => '8d885a56e8b36e1a5e089e5403f237c5734eaa01c76920e4a1cf3ef6dbc5e321a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"C9_OvoNgVPiguGjyHe5_KiYgeCnoo4Pf\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advance/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_COOKIE' => '_backendUser=a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; _frontendUser=7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=91rk1smbmm1i2ua7vassq97vd0; _backendCSRF=383f3d487ea4bc6b0de00ffe3f54b10eddb79b91a23a0c24019291d5c9775623a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%221KSJJHT3R35mrUi5g-_eDTKIKHTJbIgo%22%3B%7D; PHPFRONTSESSID=lcj7roipqrgb3vrh1enk5frnv0; _frontendCSRF=8d885a56e8b36e1a5e089e5403f237c5734eaa01c76920e4a1cf3ef6dbc5e321a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22C9_OvoNgVPiguGjyHe5_KiYgeCnoo4Pf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '511'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\CloudFoundry;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '17180'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477917904.21
+    'REQUEST_TIME' => 1477917904
+]
+2016-10-31 13:45:09 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Missing required parameter "time" when instantiating "DateTime".' in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\di\Container.php:458
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\di\Container.php(368): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('datetime', Array, Array)
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('datetime', Array, Array)
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\validators\Validator.php(209): yii\BaseYii::createObject(Array)
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(445): yii\validators\Validator::createValidator('datetime', Object(common\models\Event), Array, Array)
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(409): yii\base\Model->createValidators()
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(185): yii\base\Model->getValidators()
+#7 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(751): yii\base\Model->scenarios()
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#12 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\generators\crud\Generator.php(182): yii\gii\Generator->render('views/_form.php')
+#13 C:\xampp\htdocs\advance\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(50): yii\gii\generators\crud\Generator->generate()
+#14 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('gii/default/vie...', Array)
+#19 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#21 {main}
+2016-10-31 13:45:09 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_frontendCSRF' => 'UEFUbmMueUsTeAshFUE3LAYRPQkWaRMyGCRhMShHICw1AjoBDBopLQ=='
+    'Generator' => [
+        'modelClass' => 'common\\models\\Event'
+        'searchModelClass' => 'common\\models\\EventSearch'
+        'controllerClass' => 'common\\models\\EventController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    '_backendUser' => 'a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    '_frontendUser' => '7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    'PHPBACKSESSID' => '91rk1smbmm1i2ua7vassq97vd0'
+    '_backendCSRF' => '383f3d487ea4bc6b0de00ffe3f54b10eddb79b91a23a0c24019291d5c9775623a:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"1KSJJHT3R35mrUi5g-_eDTKIKHTJbIgo\";}'
+    'PHPFRONTSESSID' => 'lcj7roipqrgb3vrh1enk5frnv0'
+    '_frontendCSRF' => '8d885a56e8b36e1a5e089e5403f237c5734eaa01c76920e4a1cf3ef6dbc5e321a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"C9_OvoNgVPiguGjyHe5_KiYgeCnoo4Pf\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advance/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_COOKIE' => '_backendUser=a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; _frontendUser=7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=91rk1smbmm1i2ua7vassq97vd0; _backendCSRF=383f3d487ea4bc6b0de00ffe3f54b10eddb79b91a23a0c24019291d5c9775623a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%221KSJJHT3R35mrUi5g-_eDTKIKHTJbIgo%22%3B%7D; PHPFRONTSESSID=lcj7roipqrgb3vrh1enk5frnv0; _frontendCSRF=8d885a56e8b36e1a5e089e5403f237c5734eaa01c76920e4a1cf3ef6dbc5e321a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22C9_OvoNgVPiguGjyHe5_KiYgeCnoo4Pf%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '511'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\ibm\\gsk8\\lib;C:\\PROGRA~2\\IBM\\SQLLIB\\BIN;C:\\PROGRA~2\\IBM\\SQLLIB\\FUNCTION;C:\\PROGRA~2\\IBM\\SQLLIB\\SAMPLES\\REPL;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\CloudFoundry;C:\\Program Files (x86)\\Nmap;C:\\Users\\Adrian\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '17184'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1477917909.601
+    'REQUEST_TIME' => 1477917909
+]
+2016-11-08 18:42:52 [::1][-][5ma90o154go7lc2gf3g11qvu73][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'weatherph' in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Connection.php:603
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Connection.php(603): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Connection.php(545): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('cooladrian')
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('cooladrian')
+#7 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one(NULL)
+#11 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#12 C:\xampp\htdocs\advance\common\models\User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#13 C:\xampp\htdocs\advance\common\models\LoginForm.php(73): common\models\User::findByUsername('cooladrian')
+#14 C:\xampp\htdocs\advance\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#15 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#16 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#17 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#19 C:\xampp\htdocs\advance\common\models\LoginForm.php(58): yii\base\Model->validate()
+#20 C:\xampp\htdocs\advance\frontend\controllers\SiteController.php(89): common\models\LoginForm->login()
+#21 [internal function]: frontend\controllers\SiteController->actionLogin()
+#22 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#23 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#25 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/login', Array)
+#26 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'weatherph' in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Connection.php:550
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('cooladrian')
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('cooladrian')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#7 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one(NULL)
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#10 C:\xampp\htdocs\advance\common\models\User.php(83): yii\db\BaseActiveRecord::findOne(Array)
+#11 C:\xampp\htdocs\advance\common\models\LoginForm.php(73): common\models\User::findByUsername('cooladrian')
+#12 C:\xampp\htdocs\advance\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#13 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#14 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\validators\Validator.php(252): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#16 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#17 C:\xampp\htdocs\advance\common\models\LoginForm.php(58): yii\base\Model->validate()
+#18 C:\xampp\htdocs\advance\frontend\controllers\SiteController.php(89): common\models\LoginForm->login()
+#19 [internal function]: frontend\controllers\SiteController->actionLogin()
+#20 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#23 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/login', Array)
+#24 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2016-11-08 18:42:51 [::1][-][5ma90o154go7lc2gf3g11qvu73][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_frontendCSRF' => 'blZxVUtLTVMkZkQ8EwEYNgYJNx17Mw4EWCFAJhoifysCEAc5GR0iEA=='
+    'LoginForm' => [
+        'username' => 'cooladrian'
+        'password' => 'pspiso'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPFRONTSESSID' => '5ma90o154go7lc2gf3g11qvu73'
+    '_frontendCSRF' => 'a37345d755f2e9f3a28a71e3b923ad0328282b130754c146cd1047217716fcd5a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"J05iXJUeh_FH0xCW6w1sQi2xlFvlRVoC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advance/frontend/web/index.php?r=servicereport%2Findex'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '210'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPFRONTSESSID=5ma90o154go7lc2gf3g11qvu73; _frontendCSRF=a37345d755f2e9f3a28a71e3b923ad0328282b130754c146cd1047217716fcd5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22J05iXJUeh_FH0xCW6w1sQi2xlFvlRVoC%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '52736'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478626971.538
+    'REQUEST_TIME' => 1478626971
+]
+2016-11-19 14:08:00 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '...' (T_ELLIPSIS), expecting ']' in C:\xampp\htdocs\advance\frontend\views\site\about.php:43
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('about', Array, Object(frontend\controllers\SiteController))
+#3 C:\xampp\htdocs\advance\frontend\controllers\SiteController.php(140): yii\base\Controller->render('about')
+#4 [internal function]: frontend\controllers\SiteController->actionAbout()
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('about', Array)
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/about', Array)
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-11-19 14:08:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'Idea-c27ad5b7' => 'a03a47fb-1e0f-4a0e-8c43-6ce8d35d0a0b'
+    'PHPFRONTSESSID' => 'sa1jpf4ofkmak9q9s9f1k81650'
+    '_frontendCSRF' => 'a585727ecff9ece945614c794faa962d2d665a15e92c3b744e0fb8cbad91b6a5a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"vgfoUJ4aq8VsRcDQxltdwF_d24AjhOkI\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/advance/frontend/web/'
+    'HTTP_COOKIE' => 'Idea-c27ad5b7=a03a47fb-1e0f-4a0e-8c43-6ce8d35d0a0b; PHPFRONTSESSID=sa1jpf4ofkmak9q9s9f1k81650; _frontendCSRF=a585727ecff9ece945614c794faa962d2d665a15e92c3b744e0fb8cbad91b6a5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22vgfoUJ4aq8VsRcDQxltdwF_d24AjhOkI%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\Nmap'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '33052'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1479560880.258
+    'REQUEST_TIME' => 1479560880
+]

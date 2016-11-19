@@ -10,7 +10,8 @@ use Yii;
  * @property integer $id
  * @property string $title
  * @property string $description
- * @property string $created_date
+ * @property string $start_date
+ * @property string $end_date
  */
 class Event extends \yii\db\ActiveRecord
 {
@@ -28,9 +29,10 @@ class Event extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'title', 'description', 'created_date'], 'required'],
-            [['id'], 'integer'],
-            [['title', 'description', 'created_date'], 'string', 'max' => 100],
+            [['title', 'description', 'start_date', 'end_date'], 'required'],
+            [['description'], 'string'],
+            [['start_date', 'end_date'], 'safe'],
+            [['title'], 'string', 'max' => 100],
         ];
     }
 
@@ -43,7 +45,8 @@ class Event extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Title',
             'description' => 'Description',
-            'created_date' => 'Created Date',
+            'start_date' => 'Start Date',
+            'end_date' => 'End Date',
         ];
     }
 }

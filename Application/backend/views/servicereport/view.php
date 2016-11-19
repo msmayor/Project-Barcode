@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\Servicereport */
 
-$this->title = $model->id;
+$this->title = $model->DateStarted. ' '. $model->Author;
 $this->params['breadcrumbs'][] = ['label' => 'Servicereports', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -28,13 +28,13 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+            //'id',
             'DateStarted',
             'DateEnd',
             'Author',
             'Manager',
-            'WeatherStation_id',
-            'user_id',
+            'weatherStation.WeatherStation_Location',
+            'user.email',
         ],
     ]) ?>
 

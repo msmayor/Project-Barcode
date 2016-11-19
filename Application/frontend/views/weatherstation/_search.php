@@ -17,13 +17,9 @@ use yii\widgets\ActiveForm;
 
     <?= // $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'WeatherStation_Model') ?>
+    <?= $form->field($model, 'globalSearch') ?>
 
-    <?= $form->field($model, 'WeatherStation_Name') ?>
-
-    <?= $form->field($model, 'WeatherStation_Location') ?>
-
-    <?= $form->field($model, 'WeatherStation_Status') ?>
+   
 
     <?php // echo $form->field($model, 'WeatherStation_Gateway') ?>
 

@@ -20,23 +20,11 @@ $this->params['breadcrumbs'][] = $this->title;
        of any Low Pressure Areas or LPA within the Area of responsibility of the Philippines.
        </p>
        <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
        </br>
        <img src = "images/logo_meteogroup.png" font color = "black" align = "left"><img src = "images/logo-aboitiz2.png" bgcolor = "black" hspace = "170"><img src = "images/logo-wph.png" align = "right" hspace = "20">
 
 </div>
+
+<br />
+<br />
+

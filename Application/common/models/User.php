@@ -186,4 +186,7 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_reset_token = null;
     }
+    public function getfullName(){
+        return $this->firstName . ' ' . $this->lastName;
+    }
 }

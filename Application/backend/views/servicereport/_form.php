@@ -15,7 +15,7 @@ use kartik\select2\Select2;
 <div class="servicereport-form">
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
-
+    
  
          <?= $form->field($model, 'WeatherStation_id')->widget(Select2::classname(), [
             'data' => ArrayHelper::map(WeatherStation::find()->all(),'id','WeatherStation_Location'),
