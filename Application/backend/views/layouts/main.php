@@ -28,8 +28,8 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'Weather.ph',
-        'brandUrl' => 'http://localhost/advance/frontend/web/index.php',
+        'brandLabel' => Html::img('images/Logo.png', ['alt'=>Yii::$app->name]),
+        'brandUrl' => 'http://localhost/advance/backend/web/index.php',
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
@@ -71,7 +71,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; WS-AMS <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>

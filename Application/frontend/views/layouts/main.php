@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Html::img('images/logo-aboitiz2.png', ['alt'=>Yii::$app->name]),
+        'brandLabel' =>  Html::img('images/Logo.png', ['alt'=>Yii::$app->name]),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -72,9 +72,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        
     </div>
 </footer>
 
