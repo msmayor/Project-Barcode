@@ -20,8 +20,7 @@ use common\models\Service
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'globalSearch') ?>
-
+    
    
     <?php // echo $form->field($model, 'WeatherStation_id') ?>
 

@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Html::img('images/Logo.png', ['alt'=>Yii::$app->name]),
+        'brandLabel' => Html::img('images/er.png', ['alt'=>Yii::$app->name]),
         'brandUrl' => 'http://localhost/advance/backend/web/index.php',
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -39,6 +39,7 @@ AppAsset::register($this);
         ['label' => 'Privilege Management', 'url' => ['auth-assignment/index']],
         ['label' => 'Service Report', 'url' => ['/servicereport/index']],
         ['label' => 'Weather Station', 'url' => ['/weatherstation/index']],
+        ['label' => 'Event Calendar', 'url' => ['/event/index']],
         ['label' => 'Signup', 'url' => ['/site/signup']],
     ];
     if (Yii::$app->user->isGuest) {

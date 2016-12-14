@@ -41,6 +41,7 @@ class SignupForm extends Model
             ['Department', 'required'],
             ['Address', 'required'],
             ['YearsInCompany', 'required'],
+            [['YearsInCompany', 'Age'], 'integer'],
            
             ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
             ['username', 'string', 'min' => 2, 'max' => 255],

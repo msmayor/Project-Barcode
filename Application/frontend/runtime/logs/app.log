@@ -9001,3 +9001,479 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1479572562.243
     'REQUEST_TIME' => 1479572562
 ]
+2016-12-05 10:00:31 [::1][4][lgf1guac5jbg4a0as7l23ifkj3][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Servicereport::globalSearch' 
+
+in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('globalSearch')
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(2033): yii\db\BaseActiveRecord->__get('globalSearch')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(1234): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Servicereport), 'globalSearch')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(1283): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Servicereport), 'globalSearch', Array)
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(367): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Servicereport), 'globalSearch', Array)
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(193): yii\widgets\ActiveField->textInput()
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(165): yii\widgets\ActiveField->render()
+#7 C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php(23): yii\widgets\ActiveField->__toString()
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#11 C:\xampp\htdocs\advance\frontend\views\servicereport\update.php(19): yii\base\View->render('_form', Array)
+#12 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\ServicereportController))
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('update', Array, Object(frontend\controllers\ServicereportController))
+#16 C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php(121): yii\base\Controller->render('update', Array)
+#17 [internal function]: frontend\controllers\ServicereportController->actionUpdate('6')
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('update', Array)
+#21 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/u...', Array)
+#22 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#24 {main}' in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(167): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php(23): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', '<span class="ke...')
+#7 C:\xampp\htdocs\advance\frontend\views\servicereport\update.php(19): yii\base\View->render('<span class="st...', '[<span class="s...')
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\ServicereportController))
+#11 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(frontend\controllers\ServicereportController))
+#12 C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php(121): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#13 [internal function]: frontend\controllers\ServicereportController->actionUpdate('<span class="st...')
+#14 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#16 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#17 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+    in C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php:23
+    in C:\xampp\htdocs\advance\frontend\views\servicereport\update.php:19
+    in C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php:121
+2016-12-05 10:00:31 [::1][4][lgf1guac5jbg4a0as7l23ifkj3][info][application] $_GET = [
+    'r' => 'servicereport/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    '_backendCSRF' => 'bf05684327db4794337b5184eae0df85d61c429c5ef67c4e3f55632af746e538a:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"NoTn05P_ouPKaPbXSQN2xiO71MH20tzs\";}'
+    'PHPBACKSESSID' => '6gkobqh88kif4bk58u8e8obec1'
+    '_backendUser' => 'a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    '_frontendCSRF' => 'e172a931f0e0c6f78593f4bc23a7f17b6e116db93545cb88b76191ec460ba698a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"UJmPleWM1ceTWfS7Lc2YhpYhXUtnw5Y8\";}'
+    'PHPFRONTSESSID' => 'lgf1guac5jbg4a0as7l23ifkj3'
+    '_frontendUser' => '7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/frontend/web/index.php?r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_backendCSRF=bf05684327db4794337b5184eae0df85d61c429c5ef67c4e3f55632af746e538a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22NoTn05P_ouPKaPbXSQN2xiO71MH20tzs%22%3B%7D; PHPBACKSESSID=6gkobqh88kif4bk58u8e8obec1; _backendUser=a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; _frontendCSRF=e172a931f0e0c6f78593f4bc23a7f17b6e116db93545cb88b76191ec460ba698a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22UJmPleWM1ceTWfS7Lc2YhpYhXUtnw5Y8%22%3B%7D; PHPFRONTSESSID=lgf1guac5jbg4a0as7l23ifkj3; _frontendUser=7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files (x86)\\MySQL\\MySQL Utilities 1.6\\;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\Nmap'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '32977'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fupdate&id=6'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=servicereport%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480928431.735
+    'REQUEST_TIME' => 1480928431
+]
+2016-12-05 10:00:39 [::1][4][lgf1guac5jbg4a0as7l23ifkj3][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Servicereport::globalSearch' 
+
+in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('globalSearch')
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(2033): yii\db\BaseActiveRecord->__get('globalSearch')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(1234): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Servicereport), 'globalSearch')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(1283): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Servicereport), 'globalSearch', Array)
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(367): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Servicereport), 'globalSearch', Array)
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(193): yii\widgets\ActiveField->textInput()
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(165): yii\widgets\ActiveField->render()
+#7 C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php(23): yii\widgets\ActiveField->__toString()
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#11 C:\xampp\htdocs\advance\frontend\views\servicereport\update.php(19): yii\base\View->render('_form', Array)
+#12 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\ServicereportController))
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('update', Array, Object(frontend\controllers\ServicereportController))
+#16 C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php(121): yii\base\Controller->render('update', Array)
+#17 [internal function]: frontend\controllers\ServicereportController->actionUpdate('6')
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('update', Array)
+#21 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/u...', Array)
+#22 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#24 {main}' in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(167): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php(23): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', '<span class="ke...')
+#7 C:\xampp\htdocs\advance\frontend\views\servicereport\update.php(19): yii\base\View->render('<span class="st...', '[<span class="s...')
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\ServicereportController))
+#11 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(frontend\controllers\ServicereportController))
+#12 C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php(121): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#13 [internal function]: frontend\controllers\ServicereportController->actionUpdate('<span class="st...')
+#14 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#16 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#17 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+    in C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php:23
+    in C:\xampp\htdocs\advance\frontend\views\servicereport\update.php:19
+    in C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php:121
+2016-12-05 10:00:38 [::1][4][lgf1guac5jbg4a0as7l23ifkj3][info][application] $_GET = [
+    'r' => 'servicereport/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    '_backendCSRF' => 'bf05684327db4794337b5184eae0df85d61c429c5ef67c4e3f55632af746e538a:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"NoTn05P_ouPKaPbXSQN2xiO71MH20tzs\";}'
+    'PHPBACKSESSID' => '6gkobqh88kif4bk58u8e8obec1'
+    '_backendUser' => 'a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    '_frontendCSRF' => 'e172a931f0e0c6f78593f4bc23a7f17b6e116db93545cb88b76191ec460ba698a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"UJmPleWM1ceTWfS7Lc2YhpYhXUtnw5Y8\";}'
+    'PHPFRONTSESSID' => 'lgf1guac5jbg4a0as7l23ifkj3'
+    '_frontendUser' => '7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/advance/frontend/web/index.php?r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_backendCSRF=bf05684327db4794337b5184eae0df85d61c429c5ef67c4e3f55632af746e538a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22NoTn05P_ouPKaPbXSQN2xiO71MH20tzs%22%3B%7D; PHPBACKSESSID=6gkobqh88kif4bk58u8e8obec1; _backendUser=a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; _frontendCSRF=e172a931f0e0c6f78593f4bc23a7f17b6e116db93545cb88b76191ec460ba698a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22UJmPleWM1ceTWfS7Lc2YhpYhXUtnw5Y8%22%3B%7D; PHPFRONTSESSID=lgf1guac5jbg4a0as7l23ifkj3; _frontendUser=7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files (x86)\\MySQL\\MySQL Utilities 1.6\\;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\Nmap'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '32979'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport%2Fupdate&id=6'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=servicereport%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480928438.921
+    'REQUEST_TIME' => 1480928438
+]
+2016-12-05 10:01:01 [::1][4][lgf1guac5jbg4a0as7l23ifkj3][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Servicereport::globalSearch' 
+
+in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('globalSearch')
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(2033): yii\db\BaseActiveRecord->__get('globalSearch')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(1234): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Servicereport), 'globalSearch')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(1283): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Servicereport), 'globalSearch', Array)
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(367): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Servicereport), 'globalSearch', Array)
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(193): yii\widgets\ActiveField->textInput()
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(165): yii\widgets\ActiveField->render()
+#7 C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php(23): yii\widgets\ActiveField->__toString()
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#11 C:\xampp\htdocs\advance\frontend\views\servicereport\create.php(19): yii\base\View->render('_form', Array)
+#12 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\View.php(210): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\ServicereportController))
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Controller.php(47): yii\web\View->renderAjax('create', Array, Object(frontend\controllers\ServicereportController))
+#16 C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php(97): yii\web\Controller->renderAjax('create', Array)
+#17 [internal function]: frontend\controllers\ServicereportController->actionCreate()
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#21 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#22 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#24 {main}' in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception (Unkn...', 'C:\\xampp\\htdocs...', 299, Array)
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('Exception (Unkn...', 256)
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(167): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php(23): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#7 C:\xampp\htdocs\advance\frontend\views\servicereport\create.php(19): yii\base\View->render('_form', Array)
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\View.php(210): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\ServicereportController))
+#11 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Controller.php(47): yii\web\View->renderAjax('create', Array, Object(frontend\controllers\ServicereportController))
+#12 C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php(97): yii\web\Controller->renderAjax('create', Array)
+#13 [internal function]: frontend\controllers\ServicereportController->actionCreate()
+#14 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#17 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+    in C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php:23
+    in C:\xampp\htdocs\advance\frontend\views\servicereport\create.php:19
+    in C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php:97
+2016-12-05 10:01:01 [::1][4][lgf1guac5jbg4a0as7l23ifkj3][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    '_backendCSRF' => 'bf05684327db4794337b5184eae0df85d61c429c5ef67c4e3f55632af746e538a:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"NoTn05P_ouPKaPbXSQN2xiO71MH20tzs\";}'
+    'PHPBACKSESSID' => '6gkobqh88kif4bk58u8e8obec1'
+    '_backendUser' => 'a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    '_frontendCSRF' => 'e172a931f0e0c6f78593f4bc23a7f17b6e116db93545cb88b76191ec460ba698a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"UJmPleWM1ceTWfS7Lc2YhpYhXUtnw5Y8\";}'
+    'PHPFRONTSESSID' => 'lgf1guac5jbg4a0as7l23ifkj3'
+    '_frontendUser' => '7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'cmpBTERPSzAnICwcKCocfUMJJBgTKRgHPglzFSw/ElgqPzUiM3oSCA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/advance/frontend/web/index.php?r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_backendCSRF=bf05684327db4794337b5184eae0df85d61c429c5ef67c4e3f55632af746e538a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22NoTn05P_ouPKaPbXSQN2xiO71MH20tzs%22%3B%7D; PHPBACKSESSID=6gkobqh88kif4bk58u8e8obec1; _backendUser=a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; _frontendCSRF=e172a931f0e0c6f78593f4bc23a7f17b6e116db93545cb88b76191ec460ba698a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22UJmPleWM1ceTWfS7Lc2YhpYhXUtnw5Y8%22%3B%7D; PHPFRONTSESSID=lgf1guac5jbg4a0as7l23ifkj3; _frontendUser=7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files (x86)\\MySQL\\MySQL Utilities 1.6\\;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\Nmap'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '33000'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport/create'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=servicereport/create'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480928461.431
+    'REQUEST_TIME' => 1480928461
+]
+2016-12-05 10:01:17 [::1][4][lgf1guac5jbg4a0as7l23ifkj3][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Servicereport::globalSearch' 
+
+in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('globalSearch')
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(2033): yii\db\BaseActiveRecord->__get('globalSearch')
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(1234): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\Servicereport), 'globalSearch')
+#3 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\helpers\BaseHtml.php(1283): yii\helpers\BaseHtml::activeInput('text', Object(common\models\Servicereport), 'globalSearch', Array)
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(367): yii\helpers\BaseHtml::activeTextInput(Object(common\models\Servicereport), 'globalSearch', Array)
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(193): yii\widgets\ActiveField->textInput()
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(165): yii\widgets\ActiveField->render()
+#7 C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php(23): yii\widgets\ActiveField->__toString()
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#11 C:\xampp\htdocs\advance\frontend\views\servicereport\create.php(19): yii\base\View->render('_form', Array)
+#12 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\View.php(210): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\ServicereportController))
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Controller.php(47): yii\web\View->renderAjax('create', Array, Object(frontend\controllers\ServicereportController))
+#16 C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php(97): yii\web\Controller->renderAjax('create', Array)
+#17 [internal function]: frontend\controllers\ServicereportController->actionCreate()
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#21 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#22 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#24 {main}' in C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception (Unkn...', 'C:\\xampp\\htdocs...', 299, Array)
+#1 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('Exception (Unkn...', 256)
+#2 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\widgets\ActiveField.php(167): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php(23): yii\widgets\ActiveField->__toString()
+#4 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#7 C:\xampp\htdocs\advance\frontend\views\servicereport\create.php(19): yii\base\View->render('_form', Array)
+#8 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\View.php(210): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\ServicereportController))
+#11 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Controller.php(47): yii\web\View->renderAjax('create', Array, Object(frontend\controllers\ServicereportController))
+#12 C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php(97): yii\web\Controller->renderAjax('create', Array)
+#13 [internal function]: frontend\controllers\ServicereportController->actionCreate()
+#14 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#17 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('servicereport/c...', Array)
+#18 C:\xampp\htdocs\advance\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\advance\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+    in C:\xampp\htdocs\advance\frontend\views\servicereport\_form.php:23
+    in C:\xampp\htdocs\advance\frontend\views\servicereport\create.php:19
+    in C:\xampp\htdocs\advance\frontend\controllers\ServicereportController.php:97
+2016-12-05 10:01:17 [::1][4][lgf1guac5jbg4a0as7l23ifkj3][info][application] $_GET = [
+    'r' => 'servicereport/create'
+]
+
+$_COOKIE = [
+    '_backendCSRF' => 'bf05684327db4794337b5184eae0df85d61c429c5ef67c4e3f55632af746e538a:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"NoTn05P_ouPKaPbXSQN2xiO71MH20tzs\";}'
+    'PHPBACKSESSID' => '6gkobqh88kif4bk58u8e8obec1'
+    '_frontendCSRF' => 'e172a931f0e0c6f78593f4bc23a7f17b6e116db93545cb88b76191ec460ba698a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"UJmPleWM1ceTWfS7Lc2YhpYhXUtnw5Y8\";}'
+    'PHPFRONTSESSID' => 'lgf1guac5jbg4a0as7l23ifkj3'
+    '_backendUser' => 'a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+    '_frontendUser' => '7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a:2:{i:0;s:13:\"_frontendUser\";i:1;s:46:\"[4,\"9OoSj7pkMv1G14whYWTHbeYEvQqKRh5m\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'am8wMWpOVE8/JV1hBisDAlsMVWU9KAd4JgwCaAI.DScyOkRfHXsNdw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/advance/frontend/web/index.php?r=servicereport%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_backendCSRF=bf05684327db4794337b5184eae0df85d61c429c5ef67c4e3f55632af746e538a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22NoTn05P_ouPKaPbXSQN2xiO71MH20tzs%22%3B%7D; PHPBACKSESSID=6gkobqh88kif4bk58u8e8obec1; _frontendCSRF=e172a931f0e0c6f78593f4bc23a7f17b6e116db93545cb88b76191ec460ba698a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22UJmPleWM1ceTWfS7Lc2YhpYhXUtnw5Y8%22%3B%7D; PHPFRONTSESSID=lgf1guac5jbg4a0as7l23ifkj3; _backendUser=a3df4e3d9536142ef309d47f9c9ee82e067bc0a146ed83d1606754ff12c812afa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D; _frontendUser=7da4da6ef5dd2b7dadeeca9675a3ecb14c3871a8696be2e95d7a64eaaa129886a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%229OoSj7pkMv1G14whYWTHbeYEvQqKRh5m%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files (x86)\\MySQL\\MySQL Utilities 1.6\\;C:\\Users\\Adrian\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files (x86)\\Nmap'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advance/frontend/web/index.php'
+    'REMOTE_PORT' => '33027'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=servicereport/create'
+    'REQUEST_URI' => '/advance/frontend/web/index.php?r=servicereport/create'
+    'SCRIPT_NAME' => '/advance/frontend/web/index.php'
+    'PHP_SELF' => '/advance/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1480928477.155
+    'REQUEST_TIME' => 1480928477
+]
